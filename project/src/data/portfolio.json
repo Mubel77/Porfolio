@@ -1,0 +1,153 @@
+{
+  "personal": {
+    "name": "Mauricio Abel Cuellar",
+    "title": "Desarrollador Web Full Stack",
+    "subtitle": "Especialista en React, Node.js y Desarrollo Frontend",
+    "description": "Desarrollador web apasionado con experiencia en crear soluciones digitales innovadoras. Me especializo en tecnologías modernas como React, JavaScript y desarrollo frontend, siempre enfocado en la mejor experiencia del usuario y código de calidad.",
+    "objective": "Mi objetivo es seguir creciendo profesionalmente en el desarrollo web, contribuyendo con soluciones creativas e innovadoras que generen impacto positivo en los usuarios y las empresas.",
+    "location": "Argentina",
+    "email": "mauricioabelcuellar@gmail.com",
+    "phone": "+54 9 11 1234-5678",
+    "avatar": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=300",
+    "resume": "/documents/cv-mauricio-cuellar.pdf"
+  },
+  "navigation": [
+    { "label": "Inicio", "href": "#hero" },
+    { "label": "Sobre Mí", "href": "#about" },
+    { "label": "CV", "href": "#cv" },
+    { "label": "Experiencia & Proyectos", "href": "#work" },
+    { "label": "Contacto", "href": "#contact" }
+  ],
+  "social": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/Mubel77",
+      "icon": "brand-github"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mauricio-abel-cuellar-desarrolladorweb/",
+      "icon": "brand-linkedin"
+    },
+    {
+      "platform": "Email",
+      "url": "mailto:mauricioabelcuellar@gmail.com",
+      "icon": "mail"
+    }
+  ],
+  "skills": {
+    "technical": [
+      "HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "Responsive Design",
+      "Node.js", "Express", "MySQL", "MongoDB", "REST APIs",
+      "Git", "GitHub", "VS Code", "Figma", "Photoshop"
+    ],
+    "languages": [
+      "Español (Nativo)", "Inglés (Intermedio)"
+    ],
+    "soft": [
+      "Trabajo en equipo", "Resolución de problemas", "Comunicación efectiva",
+      "Adaptabilidad", "Aprendizaje continuo", "Atención al detalle"
+    ]
+  },
+  "experience": [
+    {
+      "id": 1,
+      "company": "Artes Virtuales Group",
+      "position": "Desarrollador Web Full Stack",
+      "period": "2023 - Presente",
+      "location": "Argentina",
+      "description": "Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías modernas. Colaboración en proyectos de alto impacto para clientes corporativos.",
+      "achievements": [
+        "Desarrollo de interfaces de usuario responsivas y modernas",
+        "Implementación de funcionalidades frontend con React y JavaScript",
+        "Colaboración en proyectos de desarrollo web full stack",
+        "Optimización de rendimiento y experiencia de usuario"
+      ],
+      "technologies": ["React", "JavaScript", "HTML5", "CSS3", "Node.js", "MySQL"]
+    },
+    {
+      "id": 2,
+      "company": "Proyectos Freelance",
+      "position": "Desarrollador Web Frontend",
+      "period": "2022 - 2023",
+      "location": "Argentina",
+      "description": "Desarrollo de sitios web y aplicaciones para pequeñas y medianas empresas, enfocado en soluciones personalizadas y responsive design.",
+      "achievements": [
+        "Creación de más de 10 sitios web responsivos",
+        "Implementación de diseños modernos y funcionales",
+        "Optimización SEO y rendimiento web",
+        "Mantenimiento y actualización de sitios existentes"
+      ],
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "WordPress"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio Personal",
+      "description": "Sitio web portfolio personal desarrollado con HTML, CSS y JavaScript, showcasing mis habilidades y proyectos como desarrollador web.",
+      "image": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=500",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+      "features": [
+        "Diseño responsive y moderno",
+        "Animaciones CSS personalizadas",
+        "Formulario de contacto funcional",
+        "Optimización para SEO"
+      ],
+      "liveUrl": "https://mubel77.github.io/portfolio",
+      "githubUrl": "https://github.com/Mubel77/Porfolio-Alura-Oracle",
+      "status": "Completado",
+      "category": "Frontend"
+    },
+    {
+      "id": 2,
+      "title": "Sitio Web Corporativo",
+      "description": "Desarrollo de sitio web corporativo para Artes Virtuales Group, con diseño moderno y funcionalidades avanzadas.",
+      "image": "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500",
+      "technologies": ["React", "Node.js", "CSS3", "JavaScript"],
+      "features": [
+        "Diseño responsive y profesional",
+        "Sistema de gestión de contenido",
+        "Optimización de rendimiento",
+        "Integración con redes sociales"
+      ],
+      "liveUrl": "https://www.artesvirtualesgroup.com",
+      "status": "Completado",
+      "category": "Full Stack"
+    },
+    {
+      "id": 3,
+      "title": "Aplicación Web de Gestión",
+      "description": "Aplicación web para gestión de proyectos y tareas, desarrollada con tecnologías modernas y enfoque en UX/UI.",
+      "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=500",
+      "technologies": ["React", "Node.js", "MySQL", "Bootstrap"],
+      "features": [
+        "Dashboard interactivo",
+        "Gestión de usuarios y permisos",
+        "Reportes y analytics",
+        "API REST integrada"
+      ],
+      "status": "En desarrollo",
+      "category": "Full Stack"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Oracle + Alura",
+      "degree": "Programa ONE - Desarrollo Web",
+      "period": "2023",
+      "description": "Programa intensivo de desarrollo web enfocado en tecnologías frontend y backend, incluyendo HTML, CSS, JavaScript, React y Node.js."
+    },
+    {
+      "institution": "Autodidacta",
+      "degree": "Desarrollo Web Full Stack",
+      "period": "2022 - Presente",
+      "description": "Aprendizaje continuo a través de cursos online, documentación oficial y proyectos prácticos en tecnologías web modernas."
+    }
+  ],
+  "footer": {
+    "copyright": "© 2024 Mauricio Abel Cuellar. Todos los derechos reservados.",
+    "builtwith": "Construido con React, Mantine y mucho ☕",
+    "version": "v2.0.0"
+  }
+}
