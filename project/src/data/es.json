@@ -7,10 +7,13 @@
   "typing": ["Fullstack Developer", "Diseñador", "Creador"],
   "ctaDownload": "Descargar CV",
   "ctaContact": "Contactar",
-  "heroImage": "/assets/avatar.png",
+  "images": [
+    "/assets/avatar.png",
+    "/assets/fotoPerfil.png"
+  ],
   "about": "Soy Desarrollador Web Full Stack, orientado a Backend y entornos SAP, con experiencia también en Frontend. Me destaco por mi comunicación efectiva, trabajo en equipo, planificación y organización, inteligencia emocional y perseverancia. Busco incorporarme a proyectos donde pueda aportar valor en desarrollo Backend y solución SAP, contribuyendo al éxito y la innovación tecnológica."
 },
-  "projects": [
+"projects": [
     {
       "title": "Panadería del Sauce",
       "desc": "Sitio institucional moderno, funcional y 100% responsivo.",

@@ -7,7 +7,10 @@
   "typing": ["Frontend Developer", "Designer", "Creator"],
   "ctaDownload": "Download CV",
   "ctaContact": "Contact",
-  "heroImage": "/assets/avatar.png",
+  "images": [
+    "/assets/avatar.png",
+    "/assets/fotoPerfil.png"
+  ],
   "about": "I am a Full Stack Web Developer, focused on Backend and SAP environments, with experience in Frontend as well. I stand out for my effective communication, teamwork, planning and organization, emotional intelligence, and perseverance. I aim to join projects where I can add value in Backend development and SAP solutions, contributing to success and technological innovation."
 },
   "projects": [

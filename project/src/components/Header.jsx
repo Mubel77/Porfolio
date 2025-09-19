@@ -23,16 +23,18 @@ const Header = ({ content }) => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center space-x-2"
-          >
-            <img
-              src="/assets/logo.png"
-              alt="Logo MAC"
-              className="w-10 h-10 object-contain"
-            />
-          </motion.div>
+<motion.div
+  whileHover={{ scale: 1.05 }}
+  className="flex items-center space-x-2"
+>
+  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-cyan-500 to-emerald-600 p-1 shadow-lg flex items-center justify-center">
+    <img
+      src="/assets/logo.png"
+      alt="Logo MAC"
+      className="w-12 h-12 object-contain rounded-full bg-white dark:bg-navy-800 p-1"
+    />
+  </div>
+</motion.div>
 
           <nav className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
