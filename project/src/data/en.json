@@ -1,0 +1,78 @@
+{
+  "header": {
+    "nav": ["Home", "Projects", "Experience", "Contact"]
+  },
+"hero": {
+  "title": "MAC",
+  "typing": ["Frontend Developer", "Designer", "Creator"],
+  "ctaDownload": "Download CV",
+  "ctaContact": "Contact",
+  "heroImage": "/assets/avatar.png",
+  "about": "I am a Full Stack Web Developer, focused on Backend and SAP environments, with experience in Frontend as well. I stand out for my effective communication, teamwork, planning and organization, emotional intelligence, and perseverance. I aim to join projects where I can add value in Backend development and SAP solutions, contributing to success and technological innovation."
+},
+  "projects": [
+    {
+      "title": "Panadería del Sauce",
+      "desc": "Modern institutional website, functional and 100% responsive.",
+      "image": "/assets/projects/panaderia.png",
+      "links": { "live": "https://panaderiadelsauce.com", "github": "" }
+    },
+    {
+      "title": "Artes Virtuales Group",
+      "desc": "Front-End development in team, Scrum methodology.",
+      "image": "/assets/projects/artesvirtuales.png",
+      "links": { "live": "https://www.artesvirtualesgroup.com/", "github": "" }
+    },
+    {
+      "title": "UpsEstables (E-commerce)",
+      "desc": "Online store for UPS and stabilizers, shopping cart and technical specs.",
+      "image": "/assets/projects/upstable.png",
+      "links": { "live": "", "github": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable" }
+    }
+  ],
+  "experience": [
+    {
+      "role": "SAP Development Intern",
+      "company": "ARTECH - Fundación Pescar",
+      "date": "2025 (current)",
+      "desc": "Practice in SAP environments, development support and BTP/Fiori learning."
+    },
+    {
+      "role": "Full Stack Web Developer",
+      "company": "Digital House (Program 2023-2024)",
+      "date": "Aug 2023 – Apr 2024",
+      "desc": "Group project, agile methodologies, effective communication and leadership."
+    }
+  ],
+  "about": {
+    "name": "Cuellar Mauricio Abel",
+    "summary": "Full Stack Web Developer focused on Backend and SAP environments, with Frontend experience. Effective communication, teamwork and perseverance.",
+    "skills": {
+      "languages": ["JavaScript", "Python", "C#", "C++", "Java"],
+      "frameworks": ["React", "Node.js", "Express", "Tailwind", "SAP Fiori", "BTP", "PowerApps", ".NET", "Figma", "Postman"],
+      "databases": ["MySQL", "SQL", "Power BI", "Databricks"]
+    },
+    "contact": {
+      "email": "mauricioabelcuellar@gmail.com",
+      "phone": "+54 011 2488 1416",
+      "github": "https://github.com/Mubel77",
+      "linkedin": "https://www.linkedin.com/in/mauricio-abel-cuellar-desarrolladorweb/"
+    }
+  },
+  "footer": {
+    "quickLinks": ["Home", "Projects", "Experience", "Contact"],
+    "copyright": "© MAC 2025. All rights reserved."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk!",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send message"
+    },
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again."
+  }
+}

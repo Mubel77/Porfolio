@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy: #1e293b;
+  --color-cyan: #06b6d4;
+  --color-emerald: #059669;
+  --color-magic-glow: rgba(6, 182, 212, 0.4);
+  --color-magic-aura: rgba(5, 150, 105, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-navy-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cyan-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-cyan-400;
+}
+
+/* Magic effects */
+.magic-glow {
+  box-shadow: 0 0 20px var(--color-magic-glow);
+}
+
+.magic-aura {
+  box-shadow: 0 0 30px var(--color-magic-aura);
+}
+
+/* Focus styles */
+.focus-visible {
+  @apply outline-2 outline-cyan-500 outline-offset-2;
+}
+
+/* Typing animation */
+.typing-text {
+  border-right: 2px solid #06b6d4;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(40, end), blink 0.5s step-end infinite;
+}
