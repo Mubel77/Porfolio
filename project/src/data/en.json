@@ -66,16 +66,37 @@
     "quickLinks": ["Home", "Projects", "Experience", "Contact"],
     "copyright": "© MAC 2025. All rights reserved."
   },
-  "contact": {
+ "contact": {
     "title": "Contact",
     "subtitle": "Have a project in mind? Let's talk!",
     "form": {
       "name": "Full name",
       "email": "Email",
+      "subject": "Subject",
       "message": "Message",
       "send": "Send message"
     },
+    "placeholders": {
+      "name": "Enter your full name",
+      "email": "example@mail.com",
+      "message": "Write your message here..."
+    },
+    "options": {
+      "default": "Select a subject",
+      "job": "Job opportunity",
+      "freelance": "Freelance project",
+      "collaboration": "Collaboration",
+      "general": "General inquiry"
+    },
+    "buttons": {
+      "sending": "Sending...",
+      "send": "Send"
+    },
     "success": "Message sent successfully!",
-    "error": "Error sending message. Please try again."
+    "error": "Error sending message. Please try again.",
+    "alreadySent": {
+      "title": "You already sent a message. You can send another in ",
+      "text": "To avoid spam, only one email can be sent every 24 hours."
+    }
   }
 }
