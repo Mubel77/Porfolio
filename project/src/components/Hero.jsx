@@ -1,13 +1,14 @@
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { fadeIn, slideUp, scaleIn } from '../utils/animations';
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { fadeIn, slideUp, scaleIn } from "../utils/animations";
 
 const Hero = ({ content }) => {
-  const [currentText, setCurrentText] = useState('');
+  const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [hover, setHover] = useState(false);
 
-  // Typing effect
+  // --- Efecto typing ---
   useEffect(() => {
     const typeSpeed = isDeleting ? 50 : 100;
     const currentFullText = content.typing[currentIndex];
@@ -20,7 +21,7 @@ const Hero = ({ content }) => {
           setCurrentText(currentFullText.substring(0, currentText.length + 1));
         }
       } else {
-        if (currentText === '') {
+        if (currentText === "") {
           setIsDeleting(false);
           setCurrentIndex((prev) => (prev + 1) % content.typing.length);
         } else {
@@ -32,24 +33,22 @@ const Hero = ({ content }) => {
     return () => clearTimeout(timeout);
   }, [currentText, currentIndex, isDeleting, content.typing]);
 
-  // Botón descargar CV
+  // --- Botones ---
   const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/assets/MauricioAbelCuellarDevSap.pdf';
-    link.download = 'MAC-MauricioAbelCuellarDevSap.pdf';
+    const link = document.createElement("a");
+    link.href = "/assets/MauricioAbelCuellarDevSap.pdf";
+    link.download = "MAC-MauricioAbelCuellarDevSap.pdf";
     link.click();
   };
 
-  // Botón contacto
   const handleContact = () => {
-    document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-50 to-cyan-50 dark:from-navy-900 dark:via-black dark:to-navy-800 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        
-        {/* Texto */}
+        {/* --- Texto principal --- */}
         <motion.div
           variants={fadeIn}
           initial="hidden"
@@ -62,7 +61,7 @@ const Hero = ({ content }) => {
           >
             {content.title}
           </motion.h1>
-          
+
           <motion.div
             variants={slideUp}
             className="text-2xl md:text-3xl lg:text-4xl text-navy-600 dark:text-cyan-300 mb-8 min-h-[4rem] flex items-center justify-center lg:justify-start"
@@ -83,9 +82,6 @@ const Hero = ({ content }) => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
               {content.ctaDownload}
             </motion.button>
 
@@ -99,7 +95,6 @@ const Hero = ({ content }) => {
             </motion.button>
           </motion.div>
 
-          {/* Sobre mí */}
           <motion.p
             variants={fadeIn}
             className="text-lg text-navy-700 dark:text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed"
@@ -108,32 +103,30 @@ const Hero = ({ content }) => {
           </motion.p>
         </motion.div>
 
-        {/* Avatar Hero */}
-    <motion.div
-      variants={fadeIn}
-      initial="hidden"
-      animate="visible"
-      className="relative flex justify-center"
-    >
-      <motion.div
-        className="relative w-72 h-72 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden shadow-magic"
-        animate={{ 
-          boxShadow: [
-            '0 0 30px rgba(6, 182, 212, 0.3)',
-            '0 0 50px rgba(5, 150, 105, 0.4)',
-            '0 0 30px rgba(6, 182, 212, 0.3)',
-          ]
-        }}
-        transition={{ duration: 3, repeat: Infinity }}
-      >
-        <img 
-          src="/assets/avatar.jpg" 
-          alt="Avatar Anime Programador" 
-          className="w-full h-full object-cover"
-        />
-      </motion.div>
+        {/* --- Avatar con transición suave --- */}
+        <motion.div
+          variants={fadeIn}
+          initial="hidden"
+          animate="visible"
+          className="relative flex justify-center"
+        >
+          <div
+            className="relative w-72 h-72 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden shadow-magic cursor-pointer"
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
+            <motion.img
+              key={hover ? content.images[1] : content.images[0]} // fuerza re-render suave
+              src={hover ? content.images[1] : content.images[0]}
+              alt="Avatar Hero"
+              className="w-full h-full object-cover rounded-full"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.2, ease: "easeInOut" }}
+            />
+          </div>
 
-          {/* Efectos flotantes */}
+          {/* --- Efectos decorativos --- */}
           <motion.div
             className="absolute -top-4 -right-4 w-20 h-20 bg-cyan-500/20 rounded-full blur-xl"
             animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}

@@ -8,7 +8,8 @@ import Home from './routes/Home';
 import Proyectos from './routes/Proyectos';
 import Experiencia from './routes/Experiencia';
 import Contacto from './routes/Contacto';
-// import Habilidades from './routes/Habilidades';
+import Habilidades from './routes/Habilidades';
+import Estudios from './routes/Estudios';
 import { getStoredLanguage } from './utils/i18n';
 import esContent from './data/es.json';
 import enContent from './data/en.json';
@@ -33,7 +34,8 @@ function App() {
             <Route path="/proyectos" element={<Proyectos content={content} />} />
             <Route path="/experiencia" element={<Experiencia content={content} />} />
             <Route path="/contacto" element={<Contacto content={content} />} />
-            {/* <Route path="/Habilidades" element={<Habilidades content={content} />} /> */}
+            <Route path="/estudios" element={<Estudios content={content} />} />
+            <Route path="/habilidades" element={<Habilidades content={content} />} />
           </Routes>
 
           <Footer content={content.footer} aboutContent={content.about} />

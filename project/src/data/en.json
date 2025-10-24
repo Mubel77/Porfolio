@@ -1,55 +1,79 @@
 {
   "header": {
-    "nav": ["Home", "Projects", "Experience", "Contact"]
+    "nav": ["Home", "Projects", "Experience", "Education", "Skills", "Contact"]
   },
-"hero": {
-  "title": "MAC",
-  "typing": ["Fullstack Developer", "SAP Develop", "Creator"],
-  "ctaDownload": "Download CV",
-  "ctaContact": "Contact",
-  "images": [
-    "/assets/avatar.png",
-    "/assets/fotoPerfil.png"
-  ],
-  "about": "I am a Full Stack Web Developer, focused on Backend and SAP environments, with experience in Frontend as well. I stand out for my effective communication, teamwork, planning and organization, emotional intelligence, and perseverance. I aim to join projects where I can add value in Backend development and SAP solutions, contributing to success and technological innovation."
-},
+  "hero": {
+    "title": "MAC",
+    "typing": ["Fullstack Developer", "SAP Developer", "Creator"],
+    "ctaDownload": "Download CV",
+    "ctaContact": "Contact",
+    "images": [
+      "/assets/FOTOmAURY.jpeg",
+      "/assets/mauryAnime.png"
+    ],
+    "about": "I am a Full Stack Web Developer, focused on Backend and SAP environments, with experience in Frontend as well. I excel in effective communication, teamwork, planning and organization, emotional intelligence, and perseverance. I aim to join projects where I can add value in Backend development and SAP solutions, contributing to technological success and innovation."
+  },
   "projects": [
     {
       "title": "Panadería del Sauce",
-      "desc": "Modern institutional website, functional and 100% responsive.",
+      "desc": "Modern, functional, and 100% responsive institutional website.",
       "image": "/assets/projects/panaderia.png",
+      "video": "",
       "links": { "live": "https://panaderiadelsauce.com", "github": "" }
     },
     {
-      "title": "Artes Virtuales Group",
-      "desc": "Front-End development in team, Scrum methodology.",
-      "image": "/assets/projects/artesvirtuales.png",
-      "links": { "live": "https://www.artesvirtualesgroup.com/", "github": "" }
-    },
-    {
       "title": "UpsEstables (E-commerce)",
-      "desc": "Online store for UPS and stabilizers, shopping cart and technical specs.",
+      "desc": "Online store for UPS and stabilizers, with shopping cart and technical sheets.",
       "image": "/assets/projects/upstable.png",
+      "video": "/assets/projects/upstable-demo.mp4",
       "links": { "live": "", "github": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable" }
     }
   ],
   "experience": [
     {
-      "role": "SAP Development Intern",
-      "company": "ARTECH - Fundación Pescar",
-      "date": "2025 (current)",
-      "desc": "Practice in SAP environments, development support and BTP/Fiori learning."
+      "tituloOEmpresa": "Artes Virtuales",
+      "inicio": "01-11-2024",
+      "final": "16-12-2024",
+      "descripcion": "Full stack development of a virtual art experience with Astro and JavaScript, integrating front-end and back-end in a team.",
+      "puesto": "Full Stack Developer",
+      "imagen": "/dani/artesVirtuales.png",
+      "video": "",
+      "urlTrabajo": "https://artes-virtuales.vercel.app/"
     },
     {
-      "role": "Full Stack Web Developer",
-      "company": "Digital House (Program 2023-2024)",
-      "date": "Aug 2023 – Apr 2024",
-      "desc": "Group project, agile methodologies, effective communication and leadership."
+      "tituloOEmpresa": "JB Industrial Group",
+      "inicio": "01-08-2024",
+      "final": "01-10-2024",
+      "descripcion": "Design and development of a professional landing page for a client in the industrial sector, using Figma and Astro.",
+      "puesto": "Web Developer",
+      "imagen": "/mauricio/fotoDeTrabajoJB.png",
+      "video": "/mauricio/videoJB.mp4",
+      "urlTrabajo": "https://www.jbindustrialgroup.com/"
+    },
+    {
+      "tituloOEmpresa": "Digital House - UPS Project",
+      "inicio": "04-01-2023",
+      "final": "04-20-2024",
+      "descripcion": "E-commerce for UPS and stabilizers, including technical sheets, shopping cart, and user management.",
+      "puesto": "Web Developer",
+      "imagen": "/mauricio/UpsEstable.png",
+      "video": "",
+      "urlTrabajo": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable"
+    },
+    {
+      "tituloOEmpresa": "Digital House - Hooks Project",
+      "inicio": "04-01-2023",
+      "final": "04-20-2024",
+      "descripcion": "Practical exercise using React hooks (useState, useEffect, useRef).",
+      "puesto": "Web Developer",
+      "imagen": "/mauricio/A-fondo-con-los-Hooks.png",
+      "video": "/mauricio/hooks-demo.mp4",
+      "urlTrabajo": "https://a-fondo-con-los-hooks.vercel.app/"
     }
   ],
   "about": {
     "name": "Cuellar Mauricio Abel",
-    "summary": "Full Stack Web Developer focused on Backend and SAP environments, with Frontend experience. Effective communication, teamwork and perseverance.",
+    "summary": "Full Stack Web Developer focused on Backend and SAP environments, with Frontend experience. Effective communication, teamwork, and perseverance.",
     "skills": {
       "languages": ["JavaScript", "Python", "C#", "C++", "Java"],
       "frameworks": ["React", "Node.js", "Express", "Tailwind", "SAP Fiori", "BTP", "PowerApps", ".NET", "Figma", "Postman"],
@@ -66,27 +90,27 @@
     "quickLinks": ["Home", "Projects", "Experience", "Contact"],
     "copyright": "© MAC 2025. All rights reserved."
   },
- "contact": {
+  "contact": {
     "title": "Contact",
-    "subtitle": "Have a project in mind? Let's talk!",
+    "subtitle": "Do you have a project in mind? Let's talk!",
     "form": {
-      "name": "Full name",
+      "name": "Full Name",
       "email": "Email",
       "subject": "Subject",
       "message": "Message",
-      "send": "Send message"
+      "send": "Send Message"
     },
     "placeholders": {
       "name": "Enter your full name",
-      "email": "example@mail.com",
+      "email": "example@email.com",
       "message": "Write your message here..."
     },
     "options": {
       "default": "Select a subject",
-      "job": "Job opportunity",
-      "freelance": "Freelance project",
+      "job": "Job Opportunity",
+      "freelance": "Freelance Project",
       "collaboration": "Collaboration",
-      "general": "General inquiry"
+      "general": "General Inquiry"
     },
     "buttons": {
       "sending": "Sending...",
@@ -95,8 +119,48 @@
     "success": "Message sent successfully!",
     "error": "Error sending message. Please try again.",
     "alreadySent": {
-      "title": "You already sent a message. You can send another in ",
-      "text": "To avoid spam, only one email can be sent every 24 hours."
+      "title": "You have already sent a message. You can send again in ",
+      "text": "This is to prevent spam. You can only send one email every 24 hours."
     }
-  }
+  },
+  "estudios": {
+    "titulo": "Education",
+    "cards": [
+      {
+        "titulo": "Bachelor's in Systems Analysis",
+        "institucion": "UBA",
+        "periodo": "2023 - Present"
+      },
+      {
+        "titulo": "Full Stack Web Development",
+        "institucion": "Digital House",
+        "periodo": "2022 - 2023"
+      }
+    ]
+  },
+  "habilidades_tecnicas": [
+    {
+      "titulo": "Backend",
+      "iconos": ["SiJavascript", "FaPython", "FaJava", "SiCsharp", "SiCplusplus", "FaNodeJs", "SiPostman"]
+    },
+    {
+      "titulo": "Frontend",
+      "iconos": ["FaReact", "SiTailwindcss", "FaGitAlt", "Figma"]
+    },
+    {
+      "titulo": "Data",
+      "iconos": ["SiMysql", "FaDatabase", "SiPowerbi"]
+    },
+    {
+      "titulo": "SAP",
+      "iconos": ["SiSap", "Fiori", "BTP", "PowerApps"]
+    }
+  ],
+  "habilidades_blandas": [
+    "Effective Communication",
+    "Teamwork",
+    "Planning and Organization",
+    "Emotional Intelligence",
+    "Perseverance"
+  ]
 }

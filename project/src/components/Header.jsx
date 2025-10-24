@@ -12,7 +12,9 @@ const Header = ({ content }) => {
     { label: content.nav[0], path: '/' },
     { label: content.nav[1], path: '/proyectos' },
     { label: content.nav[2], path: '/experiencia' },
-    { label: content.nav[3], path: '/contacto' },
+    { label: content.nav[3], path: '/estudios' },
+    { label: content.nav[4], path: '/habilidades' },
+    { label: content.nav[5], path: '/contacto' },
   ];
 
   return (

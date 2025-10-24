@@ -1,16 +1,16 @@
 {
   "header": {
-    "nav": ["Home", "Proyectos", "Experiencia", "Contacto"]
+    "nav": ["Home", "Proyectos", "Experiencia","Estudios", "Habilidades","Contacto"] 
   },
 "hero": {
   "title": "MAC",
   "typing": ["Desarrollador Fullstack", "Desarrollador SAP", "Creador"],
   "ctaDownload": "Descargar CV",
   "ctaContact": "Contactar",
-  "images": [
-    "/assets/avatar.png",
-    "/assets/fotoPerfil.png"
-  ],
+    "images": [
+      "/assets/avatar.png",
+      "/assets/FOTOmAURY.jpeg"
+    ],
   "about": "Soy Desarrollador Web Full Stack, orientado a Backend y entornos SAP, con experiencia también en Frontend. Me destaco por mi comunicación efectiva, trabajo en equipo, planificación y organización, inteligencia emocional y perseverancia. Busco incorporarme a proyectos donde pueda aportar valor en desarrollo Backend y solución SAP, contribuyendo al éxito y la innovación tecnológica."
 },
 "projects": [
@@ -18,33 +18,55 @@
       "title": "Panadería del Sauce",
       "desc": "Sitio institucional moderno, funcional y 100% responsivo.",
       "image": "/assets/projects/panaderia.png",
+      "video": "",
       "links": { "live": "https://panaderiadelsauce.com", "github": "" }
     },
     {
       "title": "Artes Virtuales Group",
       "desc": "Desarrollo Front-End en equipo, metodología Scrum.",
       "image": "/assets/projects/artesvirtuales.png",
+      "video": "",
       "links": { "live": "https://www.artesvirtualesgroup.com/", "github": "" }
     },
     {
       "title": "UpsEstables (E-commerce)",
       "desc": "Tienda online de UPS y estabilizadores, carrito y fichas técnicas.",
       "image": "/assets/projects/upstable.png",
+      "video": "/assets/projects/upstable-demo.mp4",
       "links": { "live": "", "github": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable" }
     }
   ],
+  
   "experience": [
     {
-      "role": "Pasante en Desarrollo SAP",
-      "company": "ARTECH - Fundación Pescar",
-      "date": "2025 (en curso)",
-      "desc": "Práctica en entornos SAP, soporte a desarrollo y aprendizaje BTP/Fiori."
+      "tituloOEmpresa": "Artes Virtuales",
+      "inicio": "01-11-2024",
+      "final": "16-12-2024",
+      "descripcion": "El equipo de desarrolladores de Artes Virtuales, compuesto por Mauricio Abel Cuellar, Daniel Campos y Carlos Campos, se ha enfocado en crear una experiencia de arte virtual utilizando un enfoque full-stack. A través de tecnologías como Astro y JavaScript, han diseñado y desarrollado una plataforma interactiva y dinámica, que integra tanto el front-end como el back-end para ofrecer una experiencia inmersiva. Cada miembro del equipo ha aportado su experiencia en áreas clave como el desarrollo de backend, la creación de interfaces de usuario y la arquitectura del sistema, asegurando una presentación fluida y de alta calidad del contenido artístico virtual. Su trabajo conjunto ha dado forma a un proyecto innovador, ofreciendo un espacio digital donde el arte y la tecnología se encuentran para explorar nuevas formas de creatividad.",
+      "puesto": "Full Stack Developer",
+      "imagen": "/dani/artesVirtuales.png",
+      "video": "",
+      "urlTrabajo": "https://artes-virtuales.vercel.app/"
     },
     {
-      "role": "Desarrollador Web Full Stack",
-      "company": "Digital House (Programa 2023-2024)",
-      "date": "Ago 2023 – Abr 2024",
-      "desc": "Proyecto grupal, metodologías ágiles, comunicación efectiva y liderazgo."
+      "tituloOEmpresa": "JB Industrial Group",
+      "inicio": "01-08-2024",
+      "final": "01-10-2024",
+      "descripcion": "Diseño y desarrollo de una landing page profesional para un cliente del sector industrial, utilizando Figma y Astro.",
+      "puesto": "Desarrollador Web",
+      "imagen": "/mauricio/fotoDeTrabajoJB.png",
+      "video": "/mauricio/videoJB.mp4",
+      "urlTrabajo": "https://www.jbindustrialgroup.com/"
+    },
+    {
+      "tituloOEmpresa": "Digital House - Proyecto UPS",
+      "inicio": "04-01-2023",
+      "final": "04-20-2024",
+      "descripcion": "E-commerce de UPS y estabilizadores, con ficha técnica, carrito de compras y gestión de usuarios.",
+      "puesto": "Desarrollador Web",
+      "imagen": "/mauricio/UpsEstable.png",
+      "video": "",
+      "urlTrabajo": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable"
     }
   ],
   "about": {
@@ -98,5 +120,45 @@
       "title": "Ya enviaste un mensaje. Podrás volver a enviar en ",
       "text": "Esto es para evitar spam. Solo puedes enviar un correo cada 24 horas."
     }
-  }
+  },
+  "estudios": {
+    "titulo": "Formación Académica",
+    "cards": [
+      {
+        "titulo": "Licenciatura en Análisis de Sistemas",
+        "institucion": "UBA",
+        "periodo": "2023 - Presente"
+      },
+      {
+        "titulo": "Desarrollo Web Full Stack",
+        "institucion": "Digital House",
+        "periodo": "2022 - 2023"
+      }
+    ]
+  },
+  "habilidades_tecnicas": [
+    {
+      "titulo": "Backend",
+      "iconos": ["SiJavascript", "FaPython", "FaJava", "SiCsharp", "SiCplusplus", "FaNodeJs", "SiPostman"]
+    },
+    {
+      "titulo": "Frontend",
+      "iconos": ["FaReact", "SiTailwindcss", "FaGitAlt", "Figma"]
+    },
+    {
+      "titulo": "Datos",
+      "iconos": ["SiMysql", "FaDatabase", "SiPowerbi"]
+    },
+    {
+      "titulo": "SAP",
+      "iconos": ["SiSap", "Fiori", "BTP", "PowerApps"]
+    }
+  ],
+  "habilidades_blandas": [
+    "Comunicación efectiva",
+    "Trabajo en equipo",
+    "Planificación y organización",
+    "Inteligencia emocional",
+    "Perseverancia"
+  ]
 }
