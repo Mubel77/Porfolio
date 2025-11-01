@@ -178,7 +178,7 @@
     }
   },
   "footer": {
-    "quickLinks": ["Home", "Proyectos", "Experiencia", "Contacto"],
+    "quickLinks": ["Home", "/Proyectos", "Experiencia", "Contacto"],
     "copyright": "© MAC 2025. Todos los derechos reservados."
   },
  "contact": {
