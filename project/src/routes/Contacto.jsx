@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm";
 
 const Contacto = ({ content }) => {
   return (
-    <main className="pt-32 pb-20 bg-gradient-to-br from-gray-50 to-cyan-50 dark:from-navy-900 dark:to-black min-h-screen">
+    <main className="pt-32 pb-20 bg-gradient-to-br from-gray-50 to-cyan-50 dark:from-navy-900 dark:to-black min-h-screen" id="contacto">
       <div className="max-w-4xl mx-auto px-4">
         {/* Título */}
         <motion.div

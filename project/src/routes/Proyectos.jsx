@@ -4,7 +4,8 @@ import { fadeIn, staggerContainer, slideUp } from '../utils/animations';
 
 const Proyectos = ({ content }) => {
   return (
-    <main className="pt-32 pb-20 bg-gray-50 dark:bg-navy-900 min-h-screen">
+   <main className="pt-32 pb-10 bg-gray-50 dark:bg-navy-900 min-h-[80vh] flex flex-col justify-start">
+
       <div className="max-w-7xl mx-auto px-4">
         <motion.div
           variants={fadeIn}

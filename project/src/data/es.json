@@ -8,65 +8,158 @@
   "ctaDownload": "Descargar CV",
   "ctaContact": "Contactar",
     "images": [
-      "/assets/avatar.png",
+      "/assets/mauryAnime.png",
       "/assets/FOTOmAURY.jpeg"
     ],
   "about": "Soy Desarrollador Web Full Stack, orientado a Backend y entornos SAP, con experiencia también en Frontend. Me destaco por mi comunicación efectiva, trabajo en equipo, planificación y organización, inteligencia emocional y perseverancia. Busco incorporarme a proyectos donde pueda aportar valor en desarrollo Backend y solución SAP, contribuyendo al éxito y la innovación tecnológica."
 },
-"projects": [
+  "projects": [
     {
-      "title": "Panadería del Sauce",
-      "desc": "Sitio institucional moderno, funcional y 100% responsivo.",
-      "image": "/assets/projects/panaderia.png",
+      "title": "Portfolio Personal",
+      "desc": "Sitio web personal desarrollado con Astro, React, HTML, CSS y JavaScript, donde presento mis proyectos, experiencia y contacto profesional. Combina animaciones con Framer Motion, diseño responsive y modo oscuro, desplegado en Vercel.",
+      "image": "/assets/projects/portfolio.png",
+      "images": [
+        "/assets/projects/mac2.jpeg",
+        "/assets/projects/mac1.jpeg"
+      ],
       "video": "",
-      "links": { "live": "https://panaderiadelsauce.com", "github": "" }
+      "languages": ["Astro", "React", "Framer Motion", "HTML", "CSS", "JavaScript"],
+      "links": { 
+        "live": "https://mauricioabelcuellar.vercel.app/", 
+        "github": "https://github.com/Mubel77/portafolio" 
+      }
     },
     {
-      "title": "Artes Virtuales Group",
-      "desc": "Desarrollo Front-End en equipo, metodología Scrum.",
-      "image": "/assets/projects/artesvirtuales.png",
+      "title": "Panadería del Sauce",
+      "desc": "DelSauce es un sitio web diseñado para presentar de forma atractiva el catálogo de productos —como panes, facturas y tortas—, ofreciendo además información clara sobre contacto, ubicación y horarios. Desarrollado con Astro, HTML, CSS y JavaScript, el proyecto se realizó en equipo utilizando Figma para el diseño, Trello bajo metodología Scrum para la organización y GitHub para el control de versiones, priorizando la rapidez, ligereza y una experiencia optimizada tanto en dispositivos móviles como en escritorio. Está preparado para futuras mejoras, como una sección de pedidos, un panel de administración de productos o integración con pasarelas de pago.",
+      "image": "/assets/projects/delsauce.jpeg",
+      "images": [
+        "/assets/projects/delsauce.jpeg",
+        "/assets/projects/sauce1.jpeg",
+        "/assets/projects/sauce3.jpeg"
+      ],
       "video": "",
-      "links": { "live": "https://www.artesvirtualesgroup.com/", "github": "" }
+      "languages": ["Astro", "HTML", "CSS", "JavaScript", "Figma", "Trello", "Scrum"],
+      "links": { 
+        "live": "https://del-sauce.vercel.app/", 
+        "github": "https://github.com/Mubel77/DelSauce" 
+      }
     },
     {
       "title": "UpsEstables (E-commerce)",
-      "desc": "Tienda online de UPS y estabilizadores, carrito y fichas técnicas.",
-      "image": "/assets/projects/upstable.png",
-      "video": "/assets/projects/upstable-demo.mp4",
-      "links": { "live": "", "github": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable" }
+      "desc": "Tienda online de UPS y estabilizadores, con carrito de compras, fichas técnicas y gestión de productos. Desarrollado con HTML, CSS, JavaScript, Node.js y Express.",
+      "image": "/assets/projects/upstables.jpeg",
+      "images": [
+        "/assets/projects/upstables.jpeg",
+                "/assets/projects/ups1.jpeg",
+                        "/assets/projects/ups5.jpeg"
+      ],
+      "video": "",
+      "languages": ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
+      "links": { 
+        "live": "", 
+        "github": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable" 
+      }
+    },
+    {
+      "title": "Digital House - A fondo con los Hooks",
+      "desc": "Proyecto realizado durante la cursada en Digital House (04-01-2023 al 04-20-2024) enfocado en el uso avanzado de Hooks de React: useState, useEffect y useRef. Permite comprender la gestión de estado, efectos secundarios y referencias dentro de componentes funcionales. Desarrollado con React, HTML, CSS y JavaScript.",
+      "image": "/assets/projects/hooks.png",
+      "images": [
+        "/assets/projects/digathouse.jpeg"
+      ],
+      "video": "",
+      "languages": ["React", "HTML", "CSS", "JavaScript"],
+      "links": { 
+        "live": "https://a-fondo-con-los-hooks.vercel.app/", 
+        "github": "" 
+      }
     }
   ],
-  
   "experience": [
+    {
+      "tituloOEmpresa": "ARTECH - Fundación Pescar",
+      "inicio": "01-05-2025",
+      "final": "Actualidad",
+      "puesto": "Pasante en Desarrollo SAP",
+      "descripcion": "Programa de formación intensiva de 318 horas orientado al desarrollo y análisis de datos en entornos SAP. Participación en un proyecto grupal aplicando metodologías ágiles y trabajo colaborativo. Desarrollo de habilidades técnicas en SAP ABAP, Fiori, SAP GUI, JavaScript, n8n, SQL, Python y PostgreSQL, junto con habilidades blandas clave como comunicación efectiva, liderazgo, inteligencia emocional y empleabilidad.",
+      
+      "imagenes": [
+        "/assets/projects/juntadaartech.jpeg",
+        "/assets/projects/conpabloartech.jpeg",
+        "/assets/projects/sapgui.jpeg",
+        "/assets/projects/sapzoom.jpeg",
+        "/assets/projects/jutadasap.jpeg"
+      ],
+      "video": "",
+      "urlTrabajo": "",
+      "lenguajes": ["SAP ABAP", "Fiori", "SAP GUI", "JavaScript", "Python", "SQL", "PostgreSQL", "n8n"]
+    },
+    {
+      "tituloOEmpresa": "Randstad Argentina",
+      "inicio": "03-2025",
+      "final": "04-2025",
+      "puesto": "Soporte Técnico – Boleta Electrónica",
+      "descripcion": "Desempeñé funciones de soporte técnico durante las elecciones de consejales en la Ciudad de Buenos Aires, brindando asistencia en el uso de equipos de boleta electrónica. Responsabilidades incluyeron la configuración de dispositivos, control de funcionamiento, resolución de incidencias en tiempo real y soporte a usuarios en el proceso electoral. Trabajo bajo presión, atención al detalle y comunicación efectiva fueron fundamentales en este rol.",
+      "imagenes": [
+        "/assets/projects/tec.jpeg",
+        "/assets/projects/tec1.jpeg",
+        "/assets/projects/tec2.jpeg"
+      ],
+      "video": "",
+      "urlTrabajo": "",
+      "lenguajes": ["Hardware", "Soporte Técnico", "Electrónica", "Atención al Usuario"]
+    },
     {
       "tituloOEmpresa": "Artes Virtuales",
       "inicio": "01-11-2024",
       "final": "16-12-2024",
-      "descripcion": "El equipo de desarrolladores de Artes Virtuales, compuesto por Mauricio Abel Cuellar, Daniel Campos y Carlos Campos, se ha enfocado en crear una experiencia de arte virtual utilizando un enfoque full-stack. A través de tecnologías como Astro y JavaScript, han diseñado y desarrollado una plataforma interactiva y dinámica, que integra tanto el front-end como el back-end para ofrecer una experiencia inmersiva. Cada miembro del equipo ha aportado su experiencia en áreas clave como el desarrollo de backend, la creación de interfaces de usuario y la arquitectura del sistema, asegurando una presentación fluida y de alta calidad del contenido artístico virtual. Su trabajo conjunto ha dado forma a un proyecto innovador, ofreciendo un espacio digital donde el arte y la tecnología se encuentran para explorar nuevas formas de creatividad.",
       "puesto": "Full Stack Developer",
-      "imagen": "/dani/artesVirtuales.png",
+      "descripcion": "Integré el equipo de desarrolladores junto a Daniel y Carlos Campos, creando una experiencia de arte virtual interactiva con un enfoque full-stack. Utilizamos Astro y JavaScript para desarrollar una plataforma inmersiva que combina front-end y back-end, optimizada para rendimiento y diseño moderno.",
+      "imagenes": [
+        "/assets/projects/artes3.jpeg",
+        "/assets/projects/artes2.jpeg",
+        "/assets/projects/arte4.jpeg"
+      ],
       "video": "",
-      "urlTrabajo": "https://artes-virtuales.vercel.app/"
+      "urlTrabajo": "https://artes-virtuales.vercel.app/",
+      "lenguajes": ["Astro", "JavaScript", "HTML", "CSS"]
     },
     {
       "tituloOEmpresa": "JB Industrial Group",
       "inicio": "01-08-2024",
       "final": "01-10-2024",
-      "descripcion": "Diseño y desarrollo de una landing page profesional para un cliente del sector industrial, utilizando Figma y Astro.",
       "puesto": "Desarrollador Web",
-      "imagen": "/mauricio/fotoDeTrabajoJB.png",
-      "video": "/mauricio/videoJB.mp4",
-      "urlTrabajo": "https://www.jbindustrialgroup.com/"
+      "descripcion": "Diseño y desarrollo de una landing page profesional para un cliente del sector industrial. Creación de la estructura del sitio con Astro, prototipado en Figma y colaboración bajo metodología Scrum. Se priorizó una experiencia visual moderna, tiempos de carga rápidos y compatibilidad multiplataforma.",
+      "imagenes": [
+        "/assets/projects/jbindustrial1.jpeg",
+        "/assets/projects/jbindustrial3.jpeg",
+        "/assets/projects/jbindustrial4.jpeg",
+        "/assets/projects/jbindustrial23.jpeg"
+      ],
+      "video": "",
+      "urlTrabajo": "https://www.jbindustrialgroup.com/",
+      "lenguajes": ["Astro", "Figma", "JavaScript", "HTML", "CSS"]
     },
     {
-      "tituloOEmpresa": "Digital House - Proyecto UPS",
-      "inicio": "04-01-2023",
-      "final": "04-20-2024",
-      "descripcion": "E-commerce de UPS y estabilizadores, con ficha técnica, carrito de compras y gestión de usuarios.",
-      "puesto": "Desarrollador Web",
-      "imagen": "/mauricio/UpsEstable.png",
+      "tituloOEmpresa": "DMD Fabrica de compresores",
+      "inicio": "01-09-2020",
+      "final": "01-12-2020",
+      "puesto": "Práctica Profesional - Técnico Electrónico",
+      "descripcion": "Práctica profesional como parte de la formación técnica en electrónica. Realicé armado y cableado de tableros eléctricos para sistemas de aire acondicionado, control de stock, detección y corrección de fallas. Desarrollé habilidades en lectura de planos eléctricos, trabajo en equipo y resolución de problemas técnicos.",
+      "imagenes": [
+        "/assets/projects/dmd1.jpeg",
+        "/assets/projects/dmd2.jpeg",
+        "/assets/projects/dmd3.jpeg",
+        "/assets/projects/dmd4.jpeg", 
+        "/assets/projects/dmd5.jpeg",
+        "/assets/projects/dmd7.jpeg",
+        "/assets/projects/dmd8.jpeg",
+        "/assets/projects/dmd9.jpeg"
+      ],
       "video": "",
-      "urlTrabajo": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable"
+      "urlTrabajo": "",
+      "lenguajes": ["Electrónica", "Mantenimiento", "Control de Stock", "Diagnóstico Técnico"]
     }
   ],
   "about": {
@@ -121,44 +214,62 @@
       "text": "Esto es para evitar spam. Solo puedes enviar un correo cada 24 horas."
     }
   },
-  "estudios": {
+ "estudios": {
     "titulo": "Formación Académica",
     "cards": [
       {
         "titulo": "Licenciatura en Análisis de Sistemas",
-        "institucion": "UBA",
-        "periodo": "2023 - Presente"
+        "institucion": "Universidad de Buenos Aires (UBA)",
+        "periodo": "2024- Presente",
+        "descripcion": "Cursando el primer año de la carrera, adquiriendo fundamentos sólidos en lógica, algoritmos, estructuras de datos y programación. Enfocado en el desarrollo de pensamiento analítico y resolución de problemas tecnológicos."
       },
       {
         "titulo": "Desarrollo Web Full Stack",
         "institucion": "Digital House",
-        "periodo": "2022 - 2023"
+        "periodo": "2023 2024",
+        "descripcion": "Programa intensivo de 6 meses orientado al desarrollo web moderno, abarcando tecnologías como JavaScript, HTML, CSS, React, Node.js y bases de datos. Incluyó trabajo en equipo, metodologías ágiles y proyectos integradores enfocados en la práctica profesional."
+      },
+      {
+        "titulo": "Técnico Electrónico",
+        "institucion": "E.E.S.T. N°9 Prof. Antonio José Rodríguez Lanús",
+        "periodo": "2016 - 2022",
+        "descripcion": "Título técnico con orientación en electrónica, enfocado en armado, reparación y control de circuitos eléctricos y electrónicos. Desarrollo de habilidades prácticas en resolución de fallas, control de stock y mantenimiento de tableros industriales."
       }
     ]
   },
   "habilidades_tecnicas": [
     {
       "titulo": "Backend",
-      "iconos": ["SiJavascript", "FaPython", "FaJava", "SiCsharp", "SiCplusplus", "FaNodeJs", "SiPostman"]
+      "iconos": ["Javascript", "Python", "Java",  "NodeJs", "Postman", "Dotnet", "Express"]
     },
     {
       "titulo": "Frontend",
-      "iconos": ["FaReact", "SiTailwindcss", "FaGitAlt", "Figma"]
+      "iconos": ["React", "Tailwindcss", "Git", "Figma", "Github"]
     },
     {
       "titulo": "Datos",
-      "iconos": ["SiMysql", "FaDatabase", "SiPowerbi"]
+      "iconos": ["Mysql", "Database", "Powerbi", "Databricks", "Postgresql", "Sqlite", "SQL"]
     },
     {
       "titulo": "SAP",
-      "iconos": ["SiSap", "Fiori", "BTP", "PowerApps"]
+      "iconos": ["Sap", "Fiori", "Btp", "Powerapps", "abap"]
+    },
+    {
+      "titulo": "Idiomas",
+      "iconos": ["FaLanguage"],
+      "descripcion": "Inglés (nivel B1, comprensión lectora y técnica)"
     }
   ],
   "habilidades_blandas": [
     "Comunicación efectiva",
     "Trabajo en equipo",
     "Planificación y organización",
+    "Adaptabilidad",
+    "Pensamiento analítico",
+    "Resolución de problemas",
     "Inteligencia emocional",
+    "Liderazgo colaborativo",
     "Perseverancia"
   ]
+
 }

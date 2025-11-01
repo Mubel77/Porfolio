@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeIn, slideUp, scaleIn } from "../utils/animations";
 
 const Hero = ({ content }) => {
+  const navigate = useNavigate();
+
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [hover, setHover] = useState(false);
+  const [currentImage, setCurrentImage] = useState(content.images[0]);
 
   // --- Efecto typing ---
   useEffect(() => {
@@ -33,6 +36,16 @@ const Hero = ({ content }) => {
     return () => clearTimeout(timeout);
   }, [currentText, currentIndex, isDeleting, content.typing]);
 
+  // --- Cambio automático de imagen cada 3 segundos ---
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) =>
+        prev === content.images[0] ? content.images[1] : content.images[0]
+      );
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [content.images]);
+
   // --- Botones ---
   const handleDownloadCV = () => {
     const link = document.createElement("a");
@@ -42,12 +55,13 @@ const Hero = ({ content }) => {
   };
 
   const handleContact = () => {
-    document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
+    navigate("/contacto"); // ✅ redirección rápida a la ruta /contacto
   };
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-50 to-cyan-50 dark:from-navy-900 dark:via-black dark:to-navy-800 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
         {/* --- Texto principal --- */}
         <motion.div
           variants={fadeIn}
@@ -103,28 +117,34 @@ const Hero = ({ content }) => {
           </motion.p>
         </motion.div>
 
-        {/* --- Avatar con transición suave --- */}
+        {/* --- Imagen principal --- */}
         <motion.div
           variants={fadeIn}
           initial="hidden"
           animate="visible"
           className="relative flex justify-center"
         >
-          <div
-            className="relative w-72 h-72 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden shadow-magic cursor-pointer"
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
+          <motion.div
+            key={currentImage}
+            className="relative w-72 h-72 lg:w-[400px] lg:h-[400px] rounded-full overflow-hidden shadow-magic"
+            initial={{ opacity: 0, scale: 0.95, rotateY: 0, filter: "blur(6px)" }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+              rotateY: 360,
+              filter: "blur(0px)",
+            }}
+            transition={{
+              duration: 2,
+              ease: [0.25, 0.1, 0.25, 1],
+            }}
           >
-            <motion.img
-              key={hover ? content.images[1] : content.images[0]} // fuerza re-render suave
-              src={hover ? content.images[1] : content.images[0]}
+            <img
+              src={currentImage}
               alt="Avatar Hero"
               className="w-full h-full object-cover rounded-full"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.2, ease: "easeInOut" }}
             />
-          </div>
+          </motion.div>
 
           {/* --- Efectos decorativos --- */}
           <motion.div

@@ -1,79 +1,169 @@
-{
+{ 
   "header": {
-    "nav": ["Home", "Projects", "Experience", "Education", "Skills", "Contact"]
+    "nav": ["Home", "Projects", "Experience", "Studies", "Skills", "Contact"] 
   },
   "hero": {
     "title": "MAC",
-    "typing": ["Fullstack Developer", "SAP Developer", "Creator"],
+    "typing": ["Full Stack Developer", "SAP Developer", "Creator"],
     "ctaDownload": "Download CV",
     "ctaContact": "Contact",
     "images": [
-      "/assets/FOTOmAURY.jpeg",
-      "/assets/mauryAnime.png"
+      "/assets/mauryAnime.png",
+      "/assets/FOTOmAURY.jpeg"
     ],
-    "about": "I am a Full Stack Web Developer, focused on Backend and SAP environments, with experience in Frontend as well. I excel in effective communication, teamwork, planning and organization, emotional intelligence, and perseverance. I aim to join projects where I can add value in Backend development and SAP solutions, contributing to technological success and innovation."
+    "about": "I am a Full Stack Web Developer focused on Backend and SAP environments, also experienced in Frontend. I stand out for my effective communication, teamwork, planning, organization, emotional intelligence, and perseverance. I seek to contribute to projects where I can add value in Backend development and SAP solutions, driving innovation and technological growth."
   },
   "projects": [
     {
-      "title": "Panadería del Sauce",
-      "desc": "Modern, functional, and 100% responsive institutional website.",
-      "image": "/assets/projects/panaderia.png",
+      "title": "Personal Portfolio",
+      "desc": "Personal website developed with Astro, React, HTML, CSS, and JavaScript, showcasing my projects, experience, and professional contact. It combines animations using Framer Motion, responsive design, and dark mode, deployed on Vercel.",
+      "image": "/assets/projects/portfolio.png",
+      "images": [
+        "/assets/projects/mac2.jpeg",
+        "/assets/projects/mac1.jpeg"
+      ],
       "video": "",
-      "links": { "live": "https://panaderiadelsauce.com", "github": "" }
+      "languages": ["Astro", "React", "Framer Motion", "HTML", "CSS", "JavaScript"],
+      "links": { 
+        "live": "https://mauricioabelcuellar.vercel.app/", 
+        "github": "https://github.com/Mubel77/portafolio" 
+      }
+    },
+    {
+      "title": "Panadería del Sauce",
+      "desc": "DelSauce is a website designed to showcase a product catalog —such as breads, pastries, and cakes— in an attractive way, while providing clear information about contact, location, and opening hours. Developed with Astro, HTML, CSS, and JavaScript, it was built collaboratively using Figma for design, Trello under the Scrum methodology for task management, and GitHub for version control. The focus was on speed, lightness, and an optimized experience for both mobile and desktop. It’s prepared for future features such as an order section, product admin panel, or payment gateway integration.",
+      "image": "/assets/projects/delsauce.jpeg",
+      "images": [
+        "/assets/projects/delsauce.jpeg",
+        "/assets/projects/sauce1.jpeg",
+        "/assets/projects/sauce3.jpeg"
+      ],
+      "video": "",
+      "languages": ["Astro", "HTML", "CSS", "JavaScript", "Figma", "Trello", "Scrum"],
+      "links": { 
+        "live": "https://del-sauce.vercel.app/", 
+        "github": "https://github.com/Mubel77/DelSauce" 
+      }
     },
     {
       "title": "UpsEstables (E-commerce)",
-      "desc": "Online store for UPS and stabilizers, with shopping cart and technical sheets.",
-      "image": "/assets/projects/upstable.png",
-      "video": "/assets/projects/upstable-demo.mp4",
-      "links": { "live": "", "github": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable" }
+      "desc": "Online store for UPS and voltage stabilizers with shopping cart, technical sheets, and product management. Developed with HTML, CSS, JavaScript, Node.js, and Express.",
+      "image": "/assets/projects/upstables.jpeg",
+      "images": [
+        "/assets/projects/upstables.jpeg",
+        "/assets/projects/ups1.jpeg",
+        "/assets/projects/ups5.jpeg"
+      ],
+      "video": "",
+      "languages": ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
+      "links": { 
+        "live": "", 
+        "github": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable" 
+      }
+    },
+    {
+      "title": "Digital House - Deep Dive into Hooks",
+      "desc": "Project developed during the Digital House course (04-01-2023 to 04-20-2024) focused on advanced usage of React Hooks: useState, useEffect, and useRef. It demonstrates state management, side effects, and references within functional components. Built with React, HTML, CSS, and JavaScript.",
+      "image": "/assets/projects/hooks.png",
+      "images": [
+        "/assets/projects/digathouse.jpeg"
+      ],
+      "video": "",
+      "languages": ["React", "HTML", "CSS", "JavaScript"],
+      "links": { 
+        "live": "https://a-fondo-con-los-hooks.vercel.app/", 
+        "github": "" 
+      }
     }
   ],
   "experience": [
     {
+      "tituloOEmpresa": "ARTECH - Fundación Pescar",
+      "inicio": "01-05-2025",
+      "final": "Present",
+      "puesto": "SAP Development Intern",
+      "descripcion": "Intensive 318-hour training program focused on development and data analysis in SAP environments. Participated in a group project applying agile methodologies and collaborative work. Developed technical skills in SAP ABAP, Fiori, SAP GUI, JavaScript, n8n, SQL, Python, and PostgreSQL, as well as key soft skills such as effective communication, leadership, emotional intelligence, and employability.",
+      "imagenes": [
+        "/assets/projects/juntadaartech.jpeg",
+        "/assets/projects/conpabloartech.jpeg",
+        "/assets/projects/sapgui.jpeg",
+        "/assets/projects/sapzoom.jpeg",
+        "/assets/projects/jutadasap.jpeg"
+      ],
+      "video": "",
+      "urlTrabajo": "",
+      "lenguajes": ["SAP ABAP", "Fiori", "SAP GUI", "JavaScript", "Python", "SQL", "PostgreSQL", "n8n"]
+    },
+    {
+      "tituloOEmpresa": "Randstad Argentina",
+      "inicio": "03-2025",
+      "final": "04-2025",
+      "puesto": "Technical Support – Electronic Voting System",
+      "descripcion": "Provided technical support during the Buenos Aires City Council elections, assisting with the electronic voting system. Responsibilities included device setup, functionality checks, real-time troubleshooting, and user assistance. Key strengths in working under pressure, attention to detail, and effective communication.",
+      "imagenes": [
+        "/assets/projects/tec.jpeg",
+        "/assets/projects/tec1.jpeg",
+        "/assets/projects/tec2.jpeg"
+      ],
+      "video": "",
+      "urlTrabajo": "",
+      "lenguajes": ["Hardware", "Technical Support", "Electronics", "User Assistance"]
+    },
+    {
       "tituloOEmpresa": "Artes Virtuales",
       "inicio": "01-11-2024",
       "final": "16-12-2024",
-      "descripcion": "Full stack development of a virtual art experience with Astro and JavaScript, integrating front-end and back-end in a team.",
       "puesto": "Full Stack Developer",
-      "imagen": "/dani/artesVirtuales.png",
+      "descripcion": "Collaborated with developers Daniel and Carlos Campos to create an interactive virtual art experience with a full-stack approach. We used Astro and JavaScript to develop an immersive platform combining front-end and back-end, optimized for performance and modern design.",
+      "imagenes": [
+        "/assets/projects/artes3.jpeg",
+        "/assets/projects/artes2.jpeg",
+        "/assets/projects/arte4.jpeg"
+      ],
       "video": "",
-      "urlTrabajo": "https://artes-virtuales.vercel.app/"
+      "urlTrabajo": "https://artes-virtuales.vercel.app/",
+      "lenguajes": ["Astro", "JavaScript", "HTML", "CSS"]
     },
     {
       "tituloOEmpresa": "JB Industrial Group",
       "inicio": "01-08-2024",
       "final": "01-10-2024",
-      "descripcion": "Design and development of a professional landing page for a client in the industrial sector, using Figma and Astro.",
       "puesto": "Web Developer",
-      "imagen": "/mauricio/fotoDeTrabajoJB.png",
-      "video": "/mauricio/videoJB.mp4",
-      "urlTrabajo": "https://www.jbindustrialgroup.com/"
-    },
-    {
-      "tituloOEmpresa": "Digital House - UPS Project",
-      "inicio": "04-01-2023",
-      "final": "04-20-2024",
-      "descripcion": "E-commerce for UPS and stabilizers, including technical sheets, shopping cart, and user management.",
-      "puesto": "Web Developer",
-      "imagen": "/mauricio/UpsEstable.png",
+      "descripcion": "Designed and developed a professional landing page for a client in the industrial sector. Created the site structure with Astro, prototyped in Figma, and collaborated under the Scrum methodology. Focused on a modern visual experience, fast load times, and cross-platform compatibility.",
+      "imagenes": [
+        "/assets/projects/jbindustrial1.jpeg",
+        "/assets/projects/jbindustrial3.jpeg",
+        "/assets/projects/jbindustrial4.jpeg",
+        "/assets/projects/jbindustrial23.jpeg"
+      ],
       "video": "",
-      "urlTrabajo": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable"
+      "urlTrabajo": "https://www.jbindustrialgroup.com/",
+      "lenguajes": ["Astro", "Figma", "JavaScript", "HTML", "CSS"]
     },
     {
-      "tituloOEmpresa": "Digital House - Hooks Project",
-      "inicio": "04-01-2023",
-      "final": "04-20-2024",
-      "descripcion": "Practical exercise using React hooks (useState, useEffect, useRef).",
-      "puesto": "Web Developer",
-      "imagen": "/mauricio/A-fondo-con-los-Hooks.png",
-      "video": "/mauricio/hooks-demo.mp4",
-      "urlTrabajo": "https://a-fondo-con-los-hooks.vercel.app/"
+      "tituloOEmpresa": "DMD Compressor Factory",
+      "inicio": "01-09-2020",
+      "final": "01-12-2020",
+      "puesto": "Professional Practice - Electronics Technician",
+      "descripcion": "Professional internship as part of technical training in electronics. Assembled and wired electrical panels for air conditioning systems, managed inventory, detected and corrected faults. Developed skills in reading electrical schematics, teamwork, and troubleshooting.",
+      "imagenes": [
+        "/assets/projects/dmd1.jpeg",
+        "/assets/projects/dmd2.jpeg",
+        "/assets/projects/dmd3.jpeg",
+        "/assets/projects/dmd4.jpeg", 
+        "/assets/projects/dmd5.jpeg",
+        "/assets/projects/dmd7.jpeg",
+        "/assets/projects/dmd8.jpeg",
+        "/assets/projects/dmd9.jpeg"
+      ],
+      "video": "",
+      "urlTrabajo": "",
+      "lenguajes": ["Electronics", "Maintenance", "Inventory Control", "Technical Diagnosis"]
     }
   ],
   "about": {
     "name": "Cuellar Mauricio Abel",
-    "summary": "Full Stack Web Developer focused on Backend and SAP environments, with Frontend experience. Effective communication, teamwork, and perseverance.",
+    "summary": "Full Stack Web Developer focused on Backend and SAP environments, with Frontend experience. Strong communication, teamwork, and perseverance.",
     "skills": {
       "languages": ["JavaScript", "Python", "C#", "C++", "Java"],
       "frameworks": ["React", "Node.js", "Express", "Tailwind", "SAP Fiori", "BTP", "PowerApps", ".NET", "Figma", "Postman"],
@@ -94,11 +184,11 @@
     "title": "Contact",
     "subtitle": "Do you have a project in mind? Let's talk!",
     "form": {
-      "name": "Full Name",
-      "email": "Email",
+      "name": "Full name",
+      "email": "Email address",
       "subject": "Subject",
       "message": "Message",
-      "send": "Send Message"
+      "send": "Send message"
     },
     "placeholders": {
       "name": "Enter your full name",
@@ -107,60 +197,77 @@
     },
     "options": {
       "default": "Select a subject",
-      "job": "Job Opportunity",
-      "freelance": "Freelance Project",
+      "job": "Job opportunity",
+      "freelance": "Freelance project",
       "collaboration": "Collaboration",
-      "general": "General Inquiry"
+      "general": "General inquiry"
     },
     "buttons": {
       "sending": "Sending...",
       "send": "Send"
     },
     "success": "Message sent successfully!",
-    "error": "Error sending message. Please try again.",
+    "error": "Error sending the message. Please try again.",
     "alreadySent": {
-      "title": "You have already sent a message. You can send again in ",
-      "text": "This is to prevent spam. You can only send one email every 24 hours."
+      "title": "You have already sent a message. You can send another in ",
+      "text": "This helps prevent spam. You can only send one email every 24 hours."
     }
   },
   "estudios": {
-    "titulo": "Education",
+    "titulo": "Academic Background",
     "cards": [
       {
-        "titulo": "Bachelor's in Systems Analysis",
-        "institucion": "UBA",
-        "periodo": "2023 - Present"
+        "titulo": "Bachelor’s Degree in Systems Analysis",
+        "institucion": "University of Buenos Aires (UBA)",
+        "periodo": "2024 - Present",
+        "descripcion": "Currently in the first year, developing strong foundations in logic, algorithms, data structures, and programming. Focused on analytical thinking and problem-solving in technology."
       },
       {
         "titulo": "Full Stack Web Development",
         "institucion": "Digital House",
-        "periodo": "2022 - 2023"
+        "periodo": "2023 - 2024",
+        "descripcion": "Six-month intensive program focused on modern web development, covering technologies such as JavaScript, HTML, CSS, React, Node.js, and databases. Included teamwork, agile methodologies, and project-based professional practice."
+      },
+      {
+        "titulo": "Electronics Technician",
+        "institucion": "E.E.S.T. N°9 Prof. Antonio José Rodríguez Lanús",
+        "periodo": "2016 - 2022",
+        "descripcion": "Technical degree focused on assembly, repair, and control of electrical and electronic circuits. Developed practical skills in troubleshooting, inventory management, and maintenance of industrial control panels."
       }
     ]
   },
   "habilidades_tecnicas": [
     {
       "titulo": "Backend",
-      "iconos": ["SiJavascript", "FaPython", "FaJava", "SiCsharp", "SiCplusplus", "FaNodeJs", "SiPostman"]
+      "iconos": ["Javascript", "Python", "Java", "NodeJs", "Postman", "Dotnet", "Express"]
     },
     {
       "titulo": "Frontend",
-      "iconos": ["FaReact", "SiTailwindcss", "FaGitAlt", "Figma"]
+      "iconos": ["React", "Tailwindcss", "Git", "Figma", "Github"]
     },
     {
       "titulo": "Data",
-      "iconos": ["SiMysql", "FaDatabase", "SiPowerbi"]
+      "iconos": ["Mysql", "Database", "Powerbi", "Databricks", "Postgresql", "Sqlite", "SQL"]
     },
     {
       "titulo": "SAP",
-      "iconos": ["SiSap", "Fiori", "BTP", "PowerApps"]
+      "iconos": ["Sap", "Fiori", "Btp", "Powerapps", "Abap"]
+    },
+    {
+      "titulo": "Languages",
+      "iconos": ["FaLanguage"],
+      "descripcion": "English (B1 level – reading and technical comprehension)"
     }
   ],
   "habilidades_blandas": [
-    "Effective Communication",
+    "Effective communication",
     "Teamwork",
-    "Planning and Organization",
-    "Emotional Intelligence",
+    "Planning and organization",
+    "Adaptability",
+    "Analytical thinking",
+    "Problem-solving",
+    "Emotional intelligence",
+    "Collaborative leadership",
     "Perseverance"
   ]
 }
