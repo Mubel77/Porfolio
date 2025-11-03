@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../utils/animations';
+import ActiveLink from './ActiveLink';
 
 const Footer = ({ content, aboutContent }) => {
   const socialLinks = [
@@ -23,6 +24,15 @@ const Footer = ({ content, aboutContent }) => {
     }
   ];
 
+  const navItems = [
+    { label: 'Home', path: '/' },
+    { label: 'Proyectos', path: '/proyectos' },
+    { label: 'Experiencia', path: '/experiencia' },
+        { label: 'Estudios', path: '/estudios' },
+            { label: 'Habilidades', path: '/habilidades' },
+    { label: 'Contacto', path: '/contacto' }
+  ];
+
   return (
     <motion.footer
       variants={fadeIn}
@@ -38,8 +48,7 @@ const Footer = ({ content, aboutContent }) => {
         viewport={{ once: true }}
         className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8"
       >
-        
-        {/* Logo Section */}
+        {/* Logo + Descripción */}
         <motion.div variants={fadeIn} className="text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
             <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-lg flex items-center justify-center">
@@ -52,24 +61,24 @@ const Footer = ({ content, aboutContent }) => {
           </p>
         </motion.div>
 
-        {/* Quick Links */}
+        {/* Enlaces rápidos */}
         <motion.div variants={fadeIn} className="text-center">
           <h4 className="text-lg font-semibold text-cyan-400 mb-4">Enlaces Rápidos</h4>
           <ul className="space-y-2">
-            {content.quickLinks.map((link, index) => (
-              <li key={index}>
-                <a 
-                  href={index === 0 ? '/' : `/${link.toLowerCase()}`}
+            {navItems.map((item) => (
+              <li key={item.path}>
+                <ActiveLink
+                  to={item.path}
                   className="text-gray-400 hover:text-cyan-300 transition-colors duration-200"
                 >
-                  {link}
-                </a>
+                  {item.label}
+                </ActiveLink>
               </li>
             ))}
           </ul>
         </motion.div>
 
-        {/* Social Links */}
+        {/* Redes y contacto */}
         <motion.div variants={fadeIn} className="text-center md:text-right">
           <h4 className="text-lg font-semibold text-cyan-400 mb-4">Conecta Conmigo</h4>
           <div className="flex justify-center md:justify-end space-x-4 mb-6">
@@ -88,7 +97,7 @@ const Footer = ({ content, aboutContent }) => {
             ))}
           </div>
           <p className="text-gray-400 text-sm">
-            <a 
+            <a
               href={`mailto:${aboutContent.contact.email}`}
               className="hover:text-cyan-300 transition-colors duration-200"
             >
@@ -104,7 +113,7 @@ const Footer = ({ content, aboutContent }) => {
         className="border-t border-navy-800 mt-8 pt-8 text-center"
       >
         <p className="text-gray-400 text-sm">
-          {content.copyright} {new Date().getFullYear()}
+          {content.copyright}
         </p>
       </motion.div>
     </motion.footer>
