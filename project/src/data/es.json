@@ -1,18 +1,24 @@
 {
   "header": {
-    "nav": ["Home", "Proyectos", "Experiencia","Estudios", "Habilidades","Contacto"] 
+    "nav": ["Home", "Proyectos", "Experiencia", "Estudios", "Habilidades", "Contacto"]
   },
-"hero": {
-  "title": "MAC",
-  "typing": ["Desarrollador Fullstack", "Desarrollador SAP", "Creador"],
-  "ctaDownload": "Descargar CV",
-  "ctaContact": "Contactar",
+  "hero": {
+    "title": "MAC",
+    "typing": [
+      "Desarrollador Software",
+      "Técnico Electrónico",
+      "Soporte Técnico",
+      "Diseñador Web",
+      "Licenciatura en Gestión de Tecnología de la Información"
+    ],
+    "ctaDownload": "Descargar CV",
+    "ctaContact": "Contactar",
     "images": [
       "/assets/mauryAnime.png",
       "/assets/FOTOmAURY.jpeg"
     ],
-  "about": "Soy Desarrollador Web Full Stack, orientado a Backend y entornos SAP, con experiencia también en Frontend. Me destaco por mi comunicación efectiva, trabajo en equipo, planificación y organización, inteligencia emocional y perseverancia. Busco incorporarme a proyectos donde pueda aportar valor en desarrollo Backend y solución SAP, contribuyendo al éxito y la innovación tecnológica."
-},
+    "about": "Mi camino en la tecnología comenzó desde la electrónica y evolucionó hacia el desarrollo de software y la gestión de IT. Actualmente curso la Licenciatura en Gestión de la TI en UADE y cuento con experiencia práctica en desarrollo tanto front-end y back-end (React, Node.js, Python, SQL, Java, JavaScript), integrando herramientas de automatización e inteligencia artificial en proyectos reales. Tengo capacidad para trabajar en equipo bajo metodologías ágiles y por mantener una comunicación clara con los clientes para transformar necesidades en soluciones técnicas eficaces. Para mantener el enfoque y la disciplina en un entorno de constante cambio, encuentro en el deporte el balance ideal para despejar la mente, superar límites y encarar nuevos desafíos. Estoy en la búsqueda de oportunidades que me permitan seguir aportando valor en el ecosistema tecnológico mientras continuo mi desarrollo profesional."
+  },
   "projects": [
     {
       "title": "Portfolio Personal",
@@ -24,9 +30,9 @@
       ],
       "video": "",
       "languages": ["Astro", "React", "Framer Motion", "HTML", "CSS", "JavaScript"],
-      "links": { 
-        "live": "https://mauricioabelcuellar.vercel.app/", 
-        "github": "https://github.com/Mubel77/portafolio" 
+      "links": {
+        "live": "https://mauricioabelcuellar.vercel.app/",
+        "github": "https://github.com/Mubel77/portafolio"
       }
     },
     {
@@ -40,9 +46,9 @@
       ],
       "video": "",
       "languages": ["Astro", "HTML", "CSS", "JavaScript", "Figma", "Trello", "Scrum"],
-      "links": { 
-        "live": "https://del-sauce.vercel.app/", 
-        "github": "https://github.com/Mubel77/DelSauce" 
+      "links": {
+        "live": "https://del-sauce.vercel.app/",
+        "github": "https://github.com/Mubel77/DelSauce"
       }
     },
     {
@@ -51,14 +57,14 @@
       "image": "/assets/projects/upstables.jpeg",
       "images": [
         "/assets/projects/upstables.jpeg",
-                "/assets/projects/ups1.jpeg",
-                        "/assets/projects/ups5.jpeg"
+        "/assets/projects/ups1.jpeg",
+        "/assets/projects/ups5.jpeg"
       ],
       "video": "",
       "languages": ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
-      "links": { 
-        "live": "", 
-        "github": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable" 
+      "links": {
+        "live": "",
+        "github": "https://github.com/Mubel77/Comision2023-Grupo8-Upstable"
       }
     },
     {
@@ -70,20 +76,30 @@
       ],
       "video": "",
       "languages": ["React", "HTML", "CSS", "JavaScript"],
-      "links": { 
-        "live": "https://a-fondo-con-los-hooks.vercel.app/", 
-        "github": "" 
+      "links": {
+        "live": "https://a-fondo-con-los-hooks.vercel.app/",
+        "github": ""
       }
     }
   ],
   "experience": [
+    {
+      "tituloOEmpresa": "Proyecto Freelance - Despliegue de Equipos PyME",
+      "inicio": "09-2026",
+      "final": "09-2026",
+      "puesto": "Soporte Técnico - Despliegue e Instalación de Equipos",
+      "descripcion": "Participé en un proyecto de implementación e instalación de equipos para una PyME, aplicando en un caso real lo aprendido durante la carrera de Gestión de TI. Fueron dos jornadas intensas de trabajo en la oficina del cliente, adaptándome al ritmo diario de la empresa para asegurar una transición fluida. Tareas realizadas: despliegue e instalación del sistema operativo Ubuntu 26 en 10 equipos Lenovo ThinkPad; ajustes a nivel de firmware/BIOS, configurando parámetros de arranque seguro y políticas de seguridad de hardware; implementación de persistencia y protección de datos mediante sistemas de archivos en capas (RAM / OverlayFS) para mantener el entorno base inalterable ante cambios no deseados tras cada reinicio; y capacitación a usuarios finales sobre el funcionamiento del sistema, sus ventajas operativas y limitaciones de uso cotidiano. Trabajo realizado junto a Francisco Peretti, quien brindó soporte técnico durante todo el proceso.",
+      "imagenes": [],
+      "video": "",
+      "urlTrabajo": "",
+      "lenguajes": ["Linux", "Ubuntu", "BIOS/Firmware", "OverlayFS", "Soporte Técnico", "Hardware"]
+    },
     {
       "tituloOEmpresa": "ARTECH - Fundación Pescar",
       "inicio": "01-05-2025",
       "final": "Actualidad",
       "puesto": "Pasante en Desarrollo SAP",
       "descripcion": "Programa de formación intensiva de 318 horas orientado al desarrollo y análisis de datos en entornos SAP. Participación en un proyecto grupal aplicando metodologías ágiles y trabajo colaborativo. Desarrollo de habilidades técnicas en SAP ABAP, Fiori, SAP GUI, JavaScript, n8n, SQL, Python y PostgreSQL, junto con habilidades blandas clave como comunicación efectiva, liderazgo, inteligencia emocional y empleabilidad.",
-      
       "imagenes": [
         "/assets/projects/juntadaartech.jpeg",
         "/assets/projects/conpabloartech.jpeg",
@@ -151,7 +167,7 @@
         "/assets/projects/dmd1.jpeg",
         "/assets/projects/dmd2.jpeg",
         "/assets/projects/dmd3.jpeg",
-        "/assets/projects/dmd4.jpeg", 
+        "/assets/projects/dmd4.jpeg",
         "/assets/projects/dmd5.jpeg",
         "/assets/projects/dmd7.jpeg",
         "/assets/projects/dmd8.jpeg",
