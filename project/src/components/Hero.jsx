@@ -49,8 +49,8 @@ const Hero = ({ content }) => {
   // --- Botones ---
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/assets/MauricioAbelCuellarDevSap.pdf";
-    link.download = "MAC-MauricioAbelCuellarDevSap.pdf";
+    link.href = "/assets/MauAbelCuellar.pdf";
+    link.download = "MAC-AnalistaDeSistemas.pdf";
     link.click();
   };
 
