@@ -89,7 +89,8 @@
       "final": "09-2026",
       "puesto": "Soporte Técnico - Despliegue e Instalación de Equipos",
       "descripcion": "Participé en un proyecto de implementación e instalación de equipos para una PyME, aplicando en un caso real lo aprendido durante la carrera de Gestión de TI. Fueron dos jornadas intensas de trabajo en la oficina del cliente, adaptándome al ritmo diario de la empresa para asegurar una transición fluida. Tareas realizadas: despliegue e instalación del sistema operativo Ubuntu 26 en 10 equipos Lenovo ThinkPad; ajustes a nivel de firmware/BIOS, configurando parámetros de arranque seguro y políticas de seguridad de hardware; implementación de persistencia y protección de datos mediante sistemas de archivos en capas (RAM / OverlayFS) para mantener el entorno base inalterable ante cambios no deseados tras cada reinicio; y capacitación a usuarios finales sobre el funcionamiento del sistema, sus ventajas operativas y limitaciones de uso cotidiano. Trabajo realizado junto a Francisco Peretti, quien brindó soporte técnico durante todo el proceso.",
-      "imagenes": [],
+      "imagenes": ["/assets/projects/ubuntu.jpeg",
+      "/assets/projects/bios.jpeg"],
       "video": "",
       "urlTrabajo": "",
       "lenguajes": ["Linux", "Ubuntu", "BIOS/Firmware", "OverlayFS", "Soporte Técnico", "Hardware"]
