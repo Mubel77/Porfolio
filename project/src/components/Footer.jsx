@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../utils/animations';
 import ActiveLink from './ActiveLink';
 
-const Footer = ({ content, aboutContent }) => {
+const Footer = ({ content, aboutContent, navLabels }) => {
   const socialLinks = [
     {
       name: 'GitHub',
@@ -24,14 +24,8 @@ const Footer = ({ content, aboutContent }) => {
     }
   ];
 
-  const navItems = [
-    { label: 'Home', path: '/' },
-    { label: 'Proyectos', path: '/proyectos' },
-    { label: 'Experiencia', path: '/experiencia' },
-        { label: 'Estudios', path: '/estudios' },
-            { label: 'Habilidades', path: '/habilidades' },
-    { label: 'Contacto', path: '/contacto' }
-  ];
+  const paths = ['/', '/proyectos', '/experiencia', '/estudios', '/habilidades', '/contacto'];
+  const navItems = paths.map((path, index) => ({ label: navLabels[index], path }));
 
   return (
     <motion.footer
@@ -39,7 +33,7 @@ const Footer = ({ content, aboutContent }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="bg-navy-900 dark:bg-black text-white py-12 mt-20"
+      className="site-footer text-white py-12 mt-20"
     >
       <motion.div
         variants={staggerContainer}

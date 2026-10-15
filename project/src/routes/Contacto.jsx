@@ -1,34 +1,61 @@
+import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeIn, slideUp } from "../utils/animations";
 import ContactForm from "../components/ContactForm";
 
 const Contacto = ({ content }) => {
+  const { email, github, linkedin } = content.about.contact;
+
   return (
-    <main className="pt-32 pb-20 bg-gradient-to-br from-gray-50 to-cyan-50 dark:from-navy-900 dark:to-black min-h-screen" id="contacto">
-      <div className="max-w-4xl mx-auto px-4">
-        {/* Título */}
+    <main className="page-section contact-page" id="contacto">
+      <div className="page-container">
         <motion.div
-          variants={fadeIn}
+          className="page-heading contact-heading"
+          data-page-title
           initial="hidden"
+          variants={fadeIn}
           animate="visible"
-          className="text-center mb-16"
         >
-          <motion.h1
-            variants={slideUp}
-            className="text-4xl md:text-5xl font-bold text-navy-800 dark:text-cyan-400 mb-4"
-          >
-            {content.contact.title}
-          </motion.h1>
-          <motion.p
-            variants={slideUp}
-            className="text-xl text-navy-600 dark:text-gray-300"
-          >
+          <motion.p variants={slideUp} className="section-kicker">
+            {content.contact.eyebrow}
+          </motion.p>
+          <motion.h1 variants={slideUp}>{content.contact.title}</motion.h1>
+          <motion.p variants={slideUp} className="page-heading-copy">
             {content.contact.subtitle}
           </motion.p>
         </motion.div>
 
-        {/* Formulario modular */}
-        <ContactForm content={content} />
+        <div className="contact-layout">
+          <aside className="contact-aside" data-reveal>
+            <p className="section-kicker">{content.contact.asideKicker}</p>
+            <h2>{content.contact.asideTitle}</h2>
+            <p className="contact-aside-copy">{content.contact.asideText}</p>
+
+            <a className="contact-email-card" href={`mailto:${email}`}>
+              <span className="contact-email-icon"><Mail size={19} /></span>
+              <span>
+                <small>{content.contact.emailLabel}</small>
+                <strong>{email}</strong>
+              </span>
+              <ArrowUpRight aria-hidden="true" size={17} />
+            </a>
+
+            <div className="contact-socials">
+              <a aria-label="GitHub" href={github} rel="noreferrer" target="_blank">
+                <Github size={19} />
+                <span>GitHub</span>
+                <ArrowUpRight aria-hidden="true" size={14} />
+              </a>
+              <a aria-label="LinkedIn" href={linkedin} rel="noreferrer" target="_blank">
+                <Linkedin size={19} />
+                <span>LinkedIn</span>
+                <ArrowUpRight aria-hidden="true" size={14} />
+              </a>
+            </div>
+          </aside>
+
+          <ContactForm content={content} recipient={email} />
+        </div>
       </div>
     </main>
   );

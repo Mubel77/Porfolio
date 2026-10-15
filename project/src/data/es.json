@@ -4,6 +4,8 @@
   },
   "hero": {
     "title": "MAC",
+    "greeting": "Hola, soy",
+    "eyebrow": "DESARROLLO · SISTEMAS · TECNOLOGÍA",
     "typing": [
       "Desarrollador Software",
       "Técnico Electrónico",
@@ -13,9 +15,13 @@
     ],
     "ctaDownload": "Descargar CV",
     "ctaContact": "Contactar",
+    "ctaProjects": "Explorar proyectos",
+    "stackLabel": "MI STACK",
+    "imageAlt": "Retrato de Mauricio Abel Cuellar",
+    "availability": "Abierto a nuevos desafíos",
     "images": [
       "/assets/mauryAnime.png",
-      "/assets/FOTOmAURY.jpeg"
+      "/assets/fotoMaury.png"
     ],
     "about": "Mi camino en la tecnología comenzó desde la electrónica y evolucionó hacia el desarrollo de software. Estudiante de Gestión de la TI en UADE, combino desarrollo web (React, Node.js, Python, SQL) con automatización e IA para construir soluciones eficientes. Busco una oportunidad laboral que me permita continuar mis estudios y desarrollarme profesionalmente, fortaleciendo especialmente mis habilidades de comunicación y atención al público."
   },
@@ -82,6 +88,13 @@
       }
     }
   ],
+  "projectsEyebrow": "TRABAJO SELECCIONADO",
+  "projectsIntro": "Una selección de proyectos, ideas y soluciones en las que transformo necesidades en experiencias digitales.",
+  "experienceEyebrow": "MI RECORRIDO",
+  "experienceIntro": "Experiencias profesionales y proyectos que marcaron mi camino en tecnología.",
+  "studiesIntro": "Formación y aprendizaje continuo para convertir curiosidad en soluciones prácticas.",
+  "skillsEyebrow": "LO QUE SÉ HACER",
+  "skillsIntro": "Tecnologías y habilidades que utilizo para resolver problemas reales.",
   "experience": [
     {
       "tituloOEmpresa": "Proyecto Freelance - Despliegue de Equipos PyME",
@@ -201,6 +214,16 @@
  "contact": {
     "title": "Contacto",
     "subtitle": "¿Tienes un proyecto en mente? ¡Hablemos!",
+    "eyebrow": "¿HABLAMOS?",
+    "formKicker": "MENSAJE DIRECTO",
+    "formTitle": "Cuéntame qué tienes en mente",
+    "asideKicker": "HAGAMOS ALGO JUNTOS",
+    "asideTitle": "Una buena idea empieza con una conversación.",
+    "asideText": "Si buscas sumar tecnología a tu proyecto o quieres conversar sobre una oportunidad, puedes escribirme directamente.",
+    "emailLabel": "ESCRÍBEME A",
+    "emailSubjectPrefix": "Consulta desde el portfolio",
+    "mailtoHint": "Al enviar, se abrirá tu aplicación de correo con el mensaje preparado para que confirmes el envío.",
+    "mailtoOpened": "Tu aplicación de correo debería haberse abierto. Revisa el mensaje y confirma el envío.",
     "form": {
       "name": "Nombre completo",
       "email": "Correo electrónico",
@@ -221,14 +244,7 @@
       "general": "Consulta general"
     },
     "buttons": {
-      "sending": "Enviando...",
-      "send": "Enviar"
-    },
-    "success": "¡Mensaje enviado con éxito!",
-    "error": "Error al enviar el mensaje. Por favor, inténtalo nuevamente.",
-    "alreadySent": {
-      "title": "Ya enviaste un mensaje. Podrás volver a enviar en ",
-      "text": "Esto es para evitar spam. Solo puedes enviar un correo cada 24 horas."
+      "send": "Abrir correo y enviar"
     }
   },
  "estudios": {

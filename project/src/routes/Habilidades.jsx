@@ -23,20 +23,22 @@ const Habilidades = ({ content }) => {
   };
 
   return (
-    <main className="pt-32 pb-20 bg-white dark:bg-navy-900 min-h-screen flex flex-col items-center justify-center">
-      <div className="max-w-6xl mx-auto px-6 w-full">
+    <main className="page-section min-h-screen flex flex-col items-center justify-center">
+      <div className="page-container max-w-6xl">
         {/* Título principal */}
         <motion.div
           variants={fadeIn}
           initial="hidden"
           animate="visible"
-          className="text-center mb-12"
+          className="page-heading"
+          data-page-title
         >
-          <h2 className="text-4xl font-bold text-cyan-500 dark:text-cyan-400 mb-3">
-            Habilidades Técnicas
+          <p className="section-kicker">{content.skillsEyebrow}</p>
+          <h2>
+            {content.header.nav[4]}
           </h2>
-          <p className="text-gray-600 dark:text-gray-300">
-            Tecnologías y áreas en las que tengo experiencia práctica.
+          <p className="page-heading-copy">
+            {content.skillsIntro}
           </p>
         </motion.div>
 
@@ -45,7 +47,7 @@ const Habilidades = ({ content }) => {
           variants={fadeIn}
           initial="hidden"
           animate="visible"
-          className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
+          className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 justify-items-center"
         >
           {habilidades_tecnicas.map((cat, index) => (
             <motion.div

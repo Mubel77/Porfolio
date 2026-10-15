@@ -3,64 +3,88 @@
 @tailwind utilities;
 
 :root {
-  --color-navy: #1e293b;
-  --color-cyan: #06b6d4;
-  --color-emerald: #059669;
-  --color-magic-glow: rgba(6, 182, 212, 0.4);
-  --color-magic-aura: rgba(5, 150, 105, 0.3);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+  background: #f4f7f6;
 }
 
 html {
-  scroll-behavior: smooth;
+  min-width: 320px;
+  overflow-x: clip;
+  scroll-behavior: auto;
+}
+
+html.dark {
+  color-scheme: dark;
+  background: #081919;
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: clip;
+  font-family: Inter, system-ui, sans-serif;
   line-height: 1.6;
-  transition: all 0.3s ease;
 }
 
-/* Custom scrollbar */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #08a889;
+  outline-offset: 3px;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+::selection {
+  color: #05211b;
+  background: #21d5b0;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-gray-100 dark:bg-navy-900;
+  background: #e7eeec;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-cyan-500 rounded-full;
+  border: 2px solid #e7eeec;
+  border-radius: 999px;
+  background: #08a889;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-cyan-400;
+.dark ::-webkit-scrollbar-track {
+  background: #0b2423;
 }
 
-/* Magic effects */
-.magic-glow {
-  box-shadow: 0 0 20px var(--color-magic-glow);
-}
-
-.magic-aura {
-  box-shadow: 0 0 30px var(--color-magic-aura);
-}
-
-/* Focus styles */
-.focus-visible {
-  @apply outline-2 outline-cyan-500 outline-offset-2;
-}
-
-/* Typing animation */
-.typing-text {
-  border-right: 2px solid #06b6d4;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 3.5s steps(40, end), blink 0.5s step-end infinite;
+.dark ::-webkit-scrollbar-thumb {
+  border-color: #0b2423;
+  background: #21d5b0;
 }

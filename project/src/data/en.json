@@ -4,12 +4,18 @@
   },
   "hero": {
     "title": "MAC",
+    "greeting": "Hi, I'm",
+    "eyebrow": "SOFTWARE · SYSTEMS · TECHNOLOGY",
+    "ctaProjects": "Explore projects",
+    "stackLabel": "MY STACK",
+    "imageAlt": "Portrait of Mauricio Abel Cuellar",
+    "availability": "Open to new opportunities",
     "typing": ["Full Stack Developer", "SAP Developer", "Creator"],
     "ctaDownload": "Download CV",
     "ctaContact": "Contact",
     "images": [
       "/assets/mauryAnime.png",
-      "/assets/FOTOmAURY.jpeg"
+      "/assets/fotoMaury.png"
     ],
     "about": "I am a Full Stack Web Developer focused on Backend and SAP environments, also experienced in Frontend. I stand out for my effective communication, teamwork, planning, organization, emotional intelligence, and perseverance. I seek to contribute to projects where I can add value in Backend development and SAP solutions, driving innovation and technological growth."
   },
@@ -76,6 +82,13 @@
       }
     }
   ],
+  "projectsEyebrow": "SELECTED WORK",
+  "projectsIntro": "A selection of projects, ideas, and solutions turning real needs into thoughtful digital experiences.",
+  "experienceEyebrow": "MY JOURNEY",
+  "experienceIntro": "Professional experiences and projects that have shaped my path in technology.",
+  "studiesIntro": "Education and continuous learning, turning curiosity into practical solutions.",
+  "skillsEyebrow": "WHAT I DO",
+  "skillsIntro": "The technologies and skills I use to solve real-world problems.",
   "experience": [
     {
       "tituloOEmpresa": "ARTECH - Fundación Pescar",
@@ -183,12 +196,21 @@
   "contact": {
     "title": "Contact",
     "subtitle": "Do you have a project in mind? Let's talk!",
+    "eyebrow": "LET'S TALK",
+    "formKicker": "DIRECT MESSAGE",
+    "formTitle": "Tell me what you have in mind",
+    "asideKicker": "LET'S BUILD SOMETHING",
+    "asideTitle": "Every good idea starts with a conversation.",
+    "asideText": "If you want to bring technology into your project or discuss an opportunity, feel free to reach out directly.",
+    "emailLabel": "EMAIL ME AT",
+    "emailSubjectPrefix": "Portfolio inquiry",
+    "mailtoHint": "Submit to open your email app with the message ready for you to review and send.",
+    "mailtoOpened": "Your email app should have opened. Review the message and confirm sending.",
     "form": {
       "name": "Full name",
       "email": "Email address",
       "subject": "Subject",
-      "message": "Message",
-      "send": "Send message"
+      "message": "Message"
     },
     "placeholders": {
       "name": "Enter your full name",
@@ -203,14 +225,7 @@
       "general": "General inquiry"
     },
     "buttons": {
-      "sending": "Sending...",
-      "send": "Send"
-    },
-    "success": "Message sent successfully!",
-    "error": "Error sending the message. Please try again.",
-    "alreadySent": {
-      "title": "You have already sent a message. You can send another in ",
-      "text": "This helps prevent spam. You can only send one email every 24 hours."
+      "send": "Open email to send"
     }
   },
   "estudios": {

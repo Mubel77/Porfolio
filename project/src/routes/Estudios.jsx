@@ -7,14 +7,15 @@ const Estudios = ({ content }) => {
   const { estudios } = content;
 
   return (
-    <main className="pt-32 pb-20 bg-white dark:bg-navy-900 min-h-screen flex flex-col items-center justify-center">
-      <div className="max-w-5xl mx-auto px-6 w-full">
+    <main className="page-section min-h-screen flex flex-col items-center justify-center">
+      <div className="page-container max-w-5xl">
         {/* Título con ícono animado */}
         <motion.div
           variants={fadeIn}
           initial="hidden"
           animate="visible"
-          className="flex flex-col items-center mb-12 text-center"
+          className="page-heading flex flex-col items-center"
+          data-page-title
         >
           <motion.div
             variants={slideUp}
@@ -24,15 +25,14 @@ const Estudios = ({ content }) => {
           </motion.div>
           <motion.h2
             variants={slideUp}
-            className="text-4xl font-bold text-cyan-600 dark:text-cyan-400 mb-2"
           >
             {estudios.titulo}
           </motion.h2>
           <motion.p
             variants={slideUp}
-            className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl"
+            className="page-heading-copy"
           >
-            Mi formación académica y cursos destacados.
+            {content.studiesIntro}
           </motion.p>
         </motion.div>
 

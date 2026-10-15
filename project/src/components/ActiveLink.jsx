@@ -9,7 +9,7 @@ const ActiveLink = ({ to, children, className, ...props }) => {
     <Link
       to={to}
       className={classNames(
-        'relative px-4 py-2 rounded-md transition-all duration-300 group',
+        'site-nav-link relative px-4 py-2 rounded-md transition-all duration-300 group',
         {
           'text-cyan-400 bg-navy-800/50 shadow-magic': isActive,
           'text-gray-300 hover:text-cyan-300 hover:bg-navy-800/30': !isActive,

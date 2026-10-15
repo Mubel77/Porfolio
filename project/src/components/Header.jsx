@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import ActiveLink from './ActiveLink';
+import LanguageFab from './LanguageFab';
 import ThemeToggle from './ThemeToggle';
 
-const Header = ({ content }) => {
+const Header = ({ content, onLanguageChange }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
   const navItems = [
     { label: content.nav[0], path: '/' },
     { label: content.nav[1], path: '/proyectos' },
@@ -17,109 +17,72 @@ const Header = ({ content }) => {
     { label: content.nav[5], path: '/contacto' },
   ];
 
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <motion.header
-      initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="fixed top-0 w-full z-40 bg-white/10 dark:bg-navy-900/10 backdrop-blur-lg border-b border-cyan-500/20"
+      className="site-header"
+      initial={{ opacity: 0, y: -16 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-<motion.div
-  whileHover={{ scale: 1.05 }}
-  className="flex items-center space-x-2"
->
-  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-cyan-500 to-emerald-600 p-1 shadow-lg flex items-center justify-center">
-    <img
-      src="/assets/logo.png"
-      alt="Logo MAC"
-      className="w-12 h-12 object-contain rounded-full bg-white dark:bg-navy-800 p-1"
-    />
-  </div>
-</motion.div>
+      <div className="site-header-inner">
+        <Link aria-label="MAC — inicio" className="site-brand" onClick={closeMenu} to="/">
+          <span className="site-brand-mark">
+            <img alt="" src="/assets/logo.png" />
+          </span>
+          <span className="site-brand-name">MAC<span>.</span></span>
+        </Link>
 
-          <nav className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => (
-              <ActiveLink key={item.path} to={item.path}>
-                {item.label}
-              </ActiveLink>
-            ))}
-          </nav>
+        <nav aria-label="Navegación principal" className="site-nav">
+          {navItems.map((item) => (
+            <ActiveLink key={item.path} to={item.path} onClick={closeMenu}>
+              {item.label}
+            </ActiveLink>
+          ))}
+        </nav>
 
-          <div className="hidden md:flex">
-            <ThemeToggle />
-          </div>
-
-          <motion.button
-            onClick={toggleMenu}
-            className="md:hidden w-10 h-10 relative focus:outline-none focus-visible"
-            whileTap={{ scale: 0.95 }}
-            aria-label="Toggle menu"
+        <div className="site-tools">
+          <LanguageFab className="language-toggle" onLanguageChange={onLanguageChange} />
+          <ThemeToggle />
+          <button
+            aria-controls="mobile-navigation"
+            aria-expanded={isMenuOpen}
+            aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+            className="mobile-menu-toggle"
+            onClick={() => setIsMenuOpen((open) => !open)}
+            type="button"
           >
-            <div className="absolute inset-0 flex flex-col justify-center items-center">
-              <motion.div
-                className="block w-6 h-0.5 bg-navy-800 dark:bg-cyan-400"
-                animate={{
-                  rotate: isMenuOpen ? 45 : 0,
-                  y: isMenuOpen ? 2 : -2,
-                }}
-                transition={{ duration: 0.2 }}
-              />
-              <motion.div
-                className="block w-6 h-0.5 bg-navy-800 dark:bg-cyan-400 mt-1"
-                animate={{
-                  opacity: isMenuOpen ? 0 : 1,
-                }}
-                transition={{ duration: 0.2 }}
-              />
-              <motion.div
-                className="block w-6 h-0.5 bg-navy-800 dark:bg-cyan-400 mt-1"
-                animate={{
-                  rotate: isMenuOpen ? -45 : 0,
-                  y: isMenuOpen ? -2 : 2,
-                }}
-                transition={{ duration: 0.2 }}
-              />
-            </div>
-          </motion.button>
+            {isMenuOpen ? <X size={21} /> : <Menu size={21} />}
+          </button>
         </div>
       </div>
 
       <AnimatePresence>
         {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
+          <motion.nav
             animate={{ opacity: 1, height: 'auto' }}
+            aria-label="Navegación móvil"
+            className="mobile-navigation"
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-cyan-500/20 bg-white/95 dark:bg-navy-900/95 backdrop-blur-lg"
+            initial={{ opacity: 0, height: 0 }}
+            id="mobile-navigation"
+            key="mobile-navigation"
           >
-            <nav className="px-4 py-6 space-y-4">
-              {navItems.map((item, index) => (
-                <motion.div
-                  key={item.path}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <ActiveLink
-                    to={item.path}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="block w-full text-left"
-                  >
-                    {item.label}
-                  </ActiveLink>
-                </motion.div>
-              ))}
+            {navItems.map((item, index) => (
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.4 }}
-                className="pt-4 flex justify-center"
+                className="mobile-navigation-item"
+                initial={{ opacity: 0, x: -12 }}
+                key={item.path}
+                transition={{ delay: index * 0.04, duration: 0.2 }}
               >
-                <ThemeToggle />
+                <ActiveLink to={item.path} onClick={closeMenu}>
+                  {item.label}
+                </ActiveLink>
               </motion.div>
-            </nav>
-          </motion.div>
+            ))}
+          </motion.nav>
         )}
       </AnimatePresence>
     </motion.header>

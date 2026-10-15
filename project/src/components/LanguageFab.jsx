@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { getStoredLanguage, setStoredLanguage, getOppositeLanguage } from '../utils/i18n';
 
-const LanguageFab = ({ onLanguageChange }) => {
+const LanguageFab = ({ onLanguageChange, className = '' }) => {
   const [language, setLanguage] = useState(getStoredLanguage);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const LanguageFab = ({ onLanguageChange }) => {
   return (
     <motion.button
       onClick={handleToggle}
-      className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-bold text-sm shadow-magic hover:shadow-magic-hover transition-all duration-300 flex items-center justify-center group"
+      className={`language-toggle ${className}`}
       whileHover={{ scale: 1.1, y: -2 }}
       whileTap={{ scale: 0.95 }}
       initial={{ opacity: 0, scale: 0 }}

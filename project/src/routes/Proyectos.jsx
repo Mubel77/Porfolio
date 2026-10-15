@@ -4,26 +4,29 @@ import { fadeIn, staggerContainer, slideUp } from '../utils/animations';
 
 const Proyectos = ({ content }) => {
   return (
-   <main className="pt-32 pb-10 bg-gray-50 dark:bg-navy-900 min-h-[80vh] flex flex-col justify-start">
+   <main className="page-section min-h-[80vh] flex flex-col justify-start">
 
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="page-container">
         <motion.div
           variants={fadeIn}
           initial="hidden"
           animate="visible"
-          className="text-center mb-16"
+          className="page-heading"
+          data-page-title
         >
-          <motion.h1 
+          <motion.p variants={slideUp} className="section-kicker">
+            {content.projectsEyebrow}
+          </motion.p>
+          <motion.h1
             variants={slideUp}
-            className="text-4xl md:text-5xl font-bold text-navy-800 dark:text-cyan-400 mb-4"
           >
-            Mis Proyectos
+            {content.header.nav[1]}
           </motion.h1>
-          <motion.p 
+          <motion.p
             variants={slideUp}
-            className="text-xl text-navy-600 dark:text-gray-300 max-w-2xl mx-auto"
+            className="page-heading-copy"
           >
-            Una colección de proyectos que demuestran mi experiencia en desarrollo web
+            {content.projectsIntro}
           </motion.p>
         </motion.div>
 
@@ -32,7 +35,7 @@ const Proyectos = ({ content }) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {content.projects.map((project, index) => (
             <motion.div key={index} variants={slideUp}>
